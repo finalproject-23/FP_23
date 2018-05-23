@@ -1,2 +1,4 @@
-# FP_23
-Final Project Pemrograman Web 2018
+# kelompok23_FP
+
+`about`
+ini adalah repository untuk tugas mata kuliah pemrograman web
