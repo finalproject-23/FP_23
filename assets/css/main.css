@@ -20,3 +20,45 @@ img.logo {
 .cont-njobo {
  padding: 0 0;
 }
+
+.logo {
+    max-width: 5%;
+  }
+    @font-face {
+    font-family: 'quicksand';
+    src: url("assets/fonts/Quicksand/Quicksand-Regular.ttf");
+  }
+  @font-face {
+    font-family: 'quicksand-bold';
+    src: url("assets/fonts/Quicksand/Quicksand-Bold.ttf");
+  }
+  .h3
+  {
+    font-family: 'quicksand-bold';
+  }
+
+  hr
+  {
+    height: 2px;
+    opacity: 0.1;
+    border-radius: 40px;
+  }
+
+  body
+  {
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .btn-floating:hover{
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .btn-floating:active{
+    color: black;
+  }
+  .bg-dark{
+    background-color: #1c2636!important;
+  }
+  .btn-dark{
+    background-color: #1c2636!important;
+  }
