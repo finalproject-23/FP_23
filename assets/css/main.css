@@ -62,3 +62,20 @@ img.logo {
   .btn-dark{
     background-color: #1c2636!important;
   }
+
+  .ppdiv {
+    width: 100px; 
+    height: 100px;
+    overflow: hidden;
+  }
+  .pp {
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .coba {
+    background-image: url(./assets/img/pp.jpg);
+    overflow: hidden;
+    height: 100px; 
+    width: 100px;
+  }
