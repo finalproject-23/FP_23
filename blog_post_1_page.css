@@ -1,13 +1,14 @@
 
 div.header {
-    background-color: lightgoldenrodyellow;
+    
     text-align: center;
-    height: 80px;
+    height: 120px;
 }
 
 h1.header {
-    color: dodgerblue;
+    color: lightslategray;
     padding-top: 10px;
+    font-family: 'quicksand-bold';
 }
 
 div.testibox {
@@ -38,7 +39,7 @@ div.warna {
     background-color:rgba(0, 0, 0, 0.5);
 }
 div.icon2 {
-    background-color:rgba(255, 255, 255, 1);
+    
     justify-content: center;
 }
 div.testi2 {
