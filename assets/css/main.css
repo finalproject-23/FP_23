@@ -5,10 +5,13 @@ img.logo-hd {
  background-color: blueviolet;
  padding: 5px
 }
+.navbar {
+ z-index: 2500;
+}
 .navbar-trans {
  background-color: rgba(0, 0, 0, 0.7);
  padding: 1.5px;
- height: 50px;
+ min-height: 50px;
  z-index: 2500;
 }
 .menu-item {
@@ -96,7 +99,7 @@ main {
 }
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  min-height: 32rem;
   background-color: #777;
 }
 .carousel-item > img {
@@ -104,7 +107,7 @@ main {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 32rem;
+  min-height: 32rem;
 }
 
 ul.icon-side {
@@ -114,4 +117,9 @@ ul.icon-side {
 .ikon {
  padding: 5px;
  margin-right: 10px
+}
+
+.img-srvcs {
+ width: 100%;
+ max-width: 300px
 }
