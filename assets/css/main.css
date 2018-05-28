@@ -17,9 +17,9 @@ img.logo-hd {
 .menu-item {
  margin: 0 5px;
 }
-#myCarousel {
+/* #myCarousel {
  margin-top: -50px
-}
+} */
 .cont-njobo {
  padding: 0 0;
 }
@@ -122,4 +122,10 @@ ul.icon-side {
 .img-srvcs {
  width: 100%;
  max-width: 300px
+}
+.txt-bb {
+ border-bottom: 3px solid #007bff
+}
+h1,h2,h3,h4,h5,h6 {
+ color: #007bff
 }
