@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
  </head>
  <body>
   <header>
@@ -93,14 +94,14 @@
         </div>
        </div>
        <div class="text-center">
-        <button type="submit" class="btn btn-primary col-lg-auto">Send</button>
+        <div class="g-recaptcha" data-sitekey="6Ldt21sUAAAAAGZLg6thFFnS4jkgtALLSlMVmC1Z"></div>
+        <button class="g-recaptcha btn btn-primary" data-callback="YourOnSubmitFn">Submit</button>
        </div>
       </form>
      </div>
      <div class="col-md-4"></div>
     </div>
    </div>
-   <img src="assets/pictures/pexels-photo-708392.jpeg" width="100%" alt="">
   </main>
 
   <footer class="bg-dark">
