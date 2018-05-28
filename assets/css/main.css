@@ -99,15 +99,44 @@ main {
 }
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  min-height: 32rem;
-  background-color: #777;
+  height: 35rem;
+  background-color: rgb(0, 0, 0);
+}
+.carousel-item.testia{
+ height: 23rem;
+ padding: 5rem 0
+}
+.carousel-item.testia > img{
+ width: 100%;
+ opacity: .3;
 }
 .carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 32rem;
+ position: absolute;
+ top: 0;
+ left: 0;
+ min-height: 100%;
+ width: 100%;
+ min-width: 700px
+}
+.h3-testi {
+ position: absolute;
+ right: 0;
+ top: 20px;
+ left: 0;
+ z-index: 15;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-pack: center;
+ justify-content: center;
+ padding-left: 0;
+ margin-right: 15%;
+ margin-left: 15%;
+}
+.bg-trans {
+ background-color: rgba(0, 0, 0, 0.7)
+}
+.porto.bg-dark {
+ background: radial-gradient(#394d6b, #1c2636) !important
 }
 
 ul.icon-side {
