@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/fontawesome-all.css">
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
  </head>
  <body>
   <header>
@@ -68,11 +68,11 @@
         <label for="message">Message</label>
         <textarea name="message" type="message" class="form-control" id="message" placeholder="Your message" rows="11"></textarea>
        </div>
-       <div class="form-group d-flex">
+       <!-- <div class="form-group d-flex">
         <div class="g-recaptcha py-2 mx-auto" data-sitekey="6Ldt21sUAAAAAGZLg6thFFnS4jkgtALLSlMVmC1Z"></div>
-       </div>
+       </div> -->
        <div class="text-center">
-        <input class="g-recaptcha btn btn-primary" name="" type="submit" data-callback="YourOnSubmitFn" value="Send"></input>
+        <input class="btn btn-primary" name="submit" type="submit" data-callback="YourOnSubmitFn" value="Send"></input>
        </div>
       </form>
      </div>
