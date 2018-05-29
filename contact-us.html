@@ -53,26 +53,26 @@
        <div class="form-row">
         <div class="form-group col-md-6">
          <label for="firstname">First Name</label>
-         <input type="text" class="form-control" id="inputfirstname" autocomplete="given-name" placeholder="John">
+         <input name="firstname" type="text" class="form-control" id="inputfirstname" autocomplete="given-name" placeholder="John">
         </div>
         <div class="form-group col-md-6">
          <label for="lastname">Last Name</label>
-         <input type="text" class="form-control" id="inputlastname" autocomplete="family-name" placeholder="Doe">
+         <input name="lastname" type="text" class="form-control" id="inputlastname" autocomplete="family-name" placeholder="Doe">
         </div>
        </div>
        <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" class="form-control" id="inputemail" autocomplete="email" placeholder="example@mail.com">
+        <input name="email" type="email" class="form-control" id="inputemail" autocomplete="email" placeholder="example@mail.com">
        </div>
        <div class="form-group">
         <label for="message">Message</label>
-        <textarea type="message" class="form-control" id="message" placeholder="Your message" rows="11"></textarea>
+        <textarea name="message" type="message" class="form-control" id="message" placeholder="Your message" rows="11"></textarea>
        </div>
        <div class="form-group d-flex">
         <div class="g-recaptcha py-2 mx-auto" data-sitekey="6Ldt21sUAAAAAGZLg6thFFnS4jkgtALLSlMVmC1Z"></div>
        </div>
        <div class="text-center">
-        <input class="g-recaptcha btn btn-primary" type="submit" data-callback="YourOnSubmitFn" value="Send"></input>
+        <input class="g-recaptcha btn btn-primary" name="" type="submit" data-callback="YourOnSubmitFn" value="Send"></input>
        </div>
       </form>
      </div>
