@@ -1,0 +1,53 @@
+div.header {
+    height: 120px;
+}
+
+h1.header {
+    font-family: 'quicksand-bold';
+    color: dodgerblue;
+}
+
+div.contentbox {
+    height: 400px;
+}
+
+h2.tgl {
+    font-family: 'Audiowide';
+    font-size: 5em;
+    margin-bottom: -16px;
+}
+
+div.icon1 {
+    width: 100px; 
+    height: 100px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    position: relative;
+    margin: 0px;
+    margin-left: -11px;
+    
+}
+img.icon1 {
+    height: 100%; 
+    position: absolute; 
+    right: -15px;
+}
+
+p.name {
+    font-size: 15px;
+}
+
+img.contentimg {
+    width: 760px;
+    height: 400px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+div.textbox {
+    height: 800px;
+}
+
+p.konten{
+   
+}
