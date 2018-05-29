@@ -12,7 +12,7 @@ h1.header {
 }
 
 div.testibox {
-    background-image: url("./img/office.jpg");
+    background-image: url("../img/office.jpg");
     
 
     /* Set a specific height */
