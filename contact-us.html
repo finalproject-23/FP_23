@@ -42,31 +42,35 @@
    <h1 class="text-center py-3">Contact Us</h1>
    <div class="container py-3">
 
-    <p class="lead">To locate our reservation service, please leave your contact details if you would like us to contact you.</p>
+    <p class="lead text-muted">To locate our reservation service, please leave your contact details if you would like us to contact you.</p>
     <div id="map" style="width:100%;height:400px;"></div>
 
     <div class="d-flex flex-md-row flex-column py-5">
      <div class="col-md-8 col-sm-12">
       <h2 class="text-center">Contact Form</h2>
-      <p class="lead text-center txt-bb">Question / Comments? Get in touch</p>
-      <form method="POST" action="https://formspree.io/artterror23@gmail.com">
+      <p class="lead text-muted text-center">Question / Comments? Get in touch</p>
+      <form name="contact" method="POST" action="https://formspree.io/artterror23@gmail.com">
        <div class="form-row">
         <div class="form-group col-md-6">
          <label for="firstname">First Name</label>
-         <input name="firstname" type="text" class="form-control" id="inputfirstname" autocomplete="given-name" placeholder="John">
+         <small class="text-muted">ex: John</small>
+         <input name="firstname" type="text" class="form-control" id="firstname" autocomplete="given-name" required>
         </div>
         <div class="form-group col-md-6">
          <label for="lastname">Last Name</label>
-         <input name="lastname" type="text" class="form-control" id="inputlastname" autocomplete="family-name" placeholder="Doe">
+         <small class="text-muted">ex: Doe</small>
+         <input name="lastname" type="text" class="form-control" id="lastname" autocomplete="family-name" required>
         </div>
        </div>
        <div class="form-group">
         <label for="email">Email</label>
-        <input name="email" type="email" class="form-control" id="inputemail" autocomplete="email" placeholder="example@mail.com">
+        <small class="text-muted">ex: example@domain.com</small>
+        <input name="email" type="email" class="form-control" id="email" autocomplete="email" required>
        </div>
        <div class="form-group">
         <label for="message">Message</label>
-        <textarea name="message" type="message" class="form-control" id="message" placeholder="Your message" rows="11"></textarea>
+        <small class="text-muted">Fill in with your messages</small>
+        <textarea name="message" type="message" class="form-control" id="message" rows="11" required></textarea>
        </div>
        <!-- <div class="form-group d-flex">
         <div class="g-recaptcha py-2 mx-auto" data-sitekey="6Ldt21sUAAAAAGZLg6thFFnS4jkgtALLSlMVmC1Z"></div>
@@ -78,7 +82,7 @@
      </div>
      <div class="col-md-4 col-sm-12 py-lg-0 py-md-0 py-sm-0 py-5">
       <h2 class="text-center">Contact List</h2>
-      <p class="lead text-center txt-bb">Feel free to contact</p>
+      <p class="lead text-muted text-center">Feel free to contact</p>
       <table class="table table-borderless table-hover">
        <tbody>
         <tr><th class="text-center" colspan="2">Address</th></tr>
@@ -164,6 +168,8 @@
    }
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSHhSMyxh3XrHskeQN40xbTNt2WMQzW94&callback=myMap"></script>
+  <script async defer src="assets/js/jquery.validate.min.js"></script>
+  <script async defer src="assets/js/form-validation.js"></script>
 
   <script async defer src="assets/js/jquery.min.js"></script>
   <script async defer src="assets/js/popper.min.js"></script>
