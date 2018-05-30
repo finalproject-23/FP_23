@@ -25,11 +25,11 @@ $(function () {
   messages: {
    firstname: "Please enter your firstname",
    lastname: "Please enter your lastname",
+   email: "Please enter a valid email address",
    message: {
     required: "Please provide a message",
     minlength: "Your message must be at least 20 characters long"
-   },
-   email: "Please enter a valid email address"
+   }
   },
   // Make sure the form is submitted to the destination defined
   // in the "action" attribute of the form when valid

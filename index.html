@@ -18,8 +18,8 @@
    <nav class="navbar navbar-expand-md navbar-dark navbar-trans">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavDropdown">
-     <ul class="navbar-nav" style="font-weight: bold">
-      <li class="nav-item menu-item active"><a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a></li>
+     <ul class="navbar-nav" id="nav" style="font-weight: bold">
+      <li class="nav-item menu-item current"><a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a></li>
       <li class="nav-item menu-item"><a class="nav-link" href="#services">Services</a></li>
       <li class="nav-item menu-item"><a class="nav-link" href="#featured">Featured</a></li>
       <li class="nav-item menu-item"><a class="nav-link" href="#blog">Blog</a></li>
@@ -152,7 +152,7 @@
        </div>
       </div>
      </div>
-     <div><p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p></div>
+     <div><p><a class="btn btn-lg btn-primary" href="https://fieqh23.github.io/FP_23/" role="button">Learn more</a></p></div>
     </div>
 
     <div class="container blog-post py-5 col-lg-8 mx-auto">
@@ -181,15 +181,15 @@
       <div class="carousel-inner">
        <div class="carousel-item testia py-lg-5 active">
         <img class="first-slide" src="assets/pictures/pexels-photo-708392.jpeg" alt="First slide">
-        <div class="container row">
-         <div class="col-3 my-auto justify-content-center">
+        <div class="container row justify-content-center">
+         <div class="col-lg-3 col-md-3 col-4 my-auto justify-content-center">
           <div class="photo-pp">
            <img class="rounded-circle" src="assets/pictures/viewImage.jpg" width="100%" alt="">
            <p class="lead mb-0 text-white">John Doe</p>
            <p class="mb-0 text-primary">Freelancer</p>
           </div>
          </div>
-         <div class="col-9 my-auto">
+         <div class="col-lg-7 col-md-5 col-8 my-auto">
           <div class="text-left text-white">
            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
@@ -200,14 +200,14 @@
        <div class="carousel-item testia py-lg-5">
         <img class="second-slide" src="assets/pictures/pexels-photo-708392.jpeg" alt="Second slide">
         <div class="container row">
-         <div class="col-3 my-auto justify-content-center">
+         <div class="col-lg-3 col-md-3 col-4 my-auto justify-content-center">
           <div class="photo-pp">
            <img class="rounded-circle" src="assets/pictures/viewImage.jpg" width="100%" alt="">
            <p class="lead mb-0 text-white">John Doe</p>
            <p class="mb-0 text-primary">Freelancer</p>
           </div>
          </div>
-         <div class="col-9 my-auto">
+         <div class="col-lg-7 col-md-5 col-8 my-auto">
           <div class="text-left text-white">
            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
@@ -218,14 +218,14 @@
        <div class="carousel-item testia py-lg-5">
         <img class="third-slide" src="assets/pictures/pexels-photo-708392.jpeg" alt="Third slide">
         <div class="container row">
-         <div class="col-3 my-auto justify-content-center">
+         <div class="col-lg-3 col-md-3 col-4 my-auto justify-content-center">
           <div class="photo-pp">
            <img class="rounded-circle" src="assets/pictures/viewImage.jpg" width="100%" alt="">
            <p class="lead mb-0 text-white">John Doe</p>
            <p class="mb-0 text-primary">Freelancer</p>
           </div>
          </div>
-         <div class="col-9 my-auto">
+         <div class="col-lg-7 col-md-5 col-8 my-auto">
           <div class="text-left text-white">
            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
@@ -378,9 +378,15 @@
     });
    }
   </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSHhSMyxh3XrHskeQN40xbTNt2WMQzW94&callback=myMap"></script>
-  <script async defer src="assets/js/jquery.min.js"></script>
-  <script async defer src="assets/js/popper.min.js"></script>
-  <script async defer src="assets/js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSHhSMyxh3XrHskeQN40xbTNt2WMQzW94&callback=myMap"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script>
+   $(document).ready(function() {
+    $('#nav').onePageNav();
+   });
+  </script>
  </body>
 </html>
