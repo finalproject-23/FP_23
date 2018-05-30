@@ -158,3 +158,10 @@ ul.icon-side {
 h1,h2,h3,h4,h5,h6 {
  color: #007bff
 }
+#sponsor {
+ margin-top: -50px;
+}
+.brdr {
+ padding: 10px;
+ border: 1px solid #ddd
+}

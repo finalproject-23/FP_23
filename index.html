@@ -13,7 +13,7 @@
  </head>
  <body>
 
-  <header>
+  <header class="sticky-top">
    <div class="logo-head bg-dark text-center"><a href="https://fieqh23.github.io/FP_23/"><img class="logo-hd" id="home" src="assets/img/icons/logofp72.png" height="50px" alt=""></a></div>
    <nav class="navbar navbar-expand-md navbar-dark navbar-trans">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -40,23 +40,9 @@
     <div class="carousel-inner">
      <div class="carousel-item active">
       <img class="first-slide" src="assets/pictures/pexels-photo-450271.jpeg" alt="First slide">
-      <div class="container">
-       <div class="carousel-caption text-left">
-        <h1>Example headline.</h1>
-        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-       </div>
-      </div>
      </div>
      <div class="carousel-item">
       <img class="second-slide" src="assets/pictures/pexels-photo-708392.jpeg" alt="Second slide">
-      <div class="container">
-       <div class="carousel-caption">
-         <h1>Another example headline.</h1>
-         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-         <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-       </div>
-      </div>
      </div>
     </div>
      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -73,7 +59,7 @@
     <div class="col-12">
      <div class="md-auto">
       <h3 id="services">OUR SERVICE</h3>
-      <h4 class="text-muted txt-bb">This Is Our Service for Better Future</h4>
+      <h4 class="text-muted">This Is Our Service for Better Future</h4>
      </div>
      <div class="row">
       <div class="col-lg-3 col-md-6 py-3">
@@ -113,7 +99,7 @@
     <img src="assets/pictures/people-office-group-team.jpg" width="100%" alt="">
     <div class="container">
      <h1 id="featured" class="py-2 text-white">Featured Project</h1>
-     <p class="lead pb-2 txt-bb">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+     <p class="lead pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
      <div class="album bg-dark">
       <div class="row">
        <div class="col-lg-4 col-md-6">
@@ -312,6 +298,21 @@
      </div>
     </div> -->
     <footer class="bg-dark">
+     <nav class="navbar navbar-expand-md navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+       aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavDropdown">
+       <ul class="navbar-nav">
+        <li class="nav-item menu-item active"><a class="nav-link" href="https://fieqh23.github.io/FP_23/">HOME<span class="sr-only">(current)</span></a></li>
+        <li class="nav-item menu-item"><a class="nav-link" href="https://fieqh23.github.io/FP_23/">BLOG</a></li>
+        <li class="nav-item menu-item"><a class="nav-link" href="https://fieqh23.github.io/FP_23/">GALLERY</a></li>
+        <li class="nav-item menu-item"><a class="nav-link" href="https://fieqh23.github.io/FP_23/about.html">ABOUT</a></li>
+        <li class="nav-item menu-item"><a class="nav-link" href="https://fieqh23.github.io/FP_23/contact-us.html">CONTACT</a></li>
+       </ul>
+      </div>
+     </nav>
      <div class="container">
       <div class="row justify-content-center pt-4 pb-3">
        <img src="assets/img/icons/logofp128.png"  class="col-auto" height="40px" alt="">
@@ -378,9 +379,9 @@
     });
    }
   </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSHhSMyxh3XrHskeQN40xbTNt2WMQzW94&callback=myMap"></script>
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSHhSMyxh3XrHskeQN40xbTNt2WMQzW94&callback=myMap"></script>
+  <script async defer src="assets/js/jquery.min.js"></script>
+  <script async defer src="assets/js/popper.min.js"></script>
+  <script async defer src="assets/js/bootstrap.min.js"></script>
  </body>
 </html>
