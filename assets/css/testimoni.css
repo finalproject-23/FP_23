@@ -26,6 +26,12 @@ div.testibox {
 
     position: relative;
     
+    padding-right: 0px;
+    margin-right: 0px;
+    padding-left: 0;
+    margin-left: 0;
+
+    overflow: hidden;
 }
 
 div.icon {

@@ -1,3 +1,5 @@
+
+
 .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: 6;
@@ -31,3 +33,10 @@
   div.test:hover .test {
     opacity: 0.5;
   }
+
+  .sample-show-hide {
+    transition: all linear 0.5s;
+  }
+  .sample-show-hide.ng-hide {
+    opacity: 0;
+  } 
