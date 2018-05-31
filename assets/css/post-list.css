@@ -1,0 +1,33 @@
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;  
+  }
+
+  .module {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  a.linkhead {
+    transition: color 0.5s;
+  }
+
+  a.linkhead:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  div.test {
+  
+  }
+  
+  img.test {
+    transition: 0.5s ease;
+  }
+
+  
+  div.test:hover .test {
+    opacity: 0.5;
+  }

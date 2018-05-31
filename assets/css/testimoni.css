@@ -1,0 +1,97 @@
+
+div.header {
+    
+    text-align: center;
+    height: 120px;
+}
+
+h1.header {
+    color: lightslategray;
+    padding-top: 10px;
+    font-family: 'quicksand-bold';
+}
+
+div.testibox {
+    background-image: url("../img/office.jpg");
+    
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    
+}
+
+div.icon {
+    background-color:rgba(0, 0, 0, 0.5);
+    justify-content: center;
+}
+div.testi {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+div.warna {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+div.icon2 {
+    
+    justify-content: center;
+}
+div.testi2 {
+    background-color:rgba(255, 255, 255, 1);
+}
+div.warna2 {
+    background-color:rgba(255, 255, 255, 1);
+}
+
+div.icon1 {
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    position: relative;
+    
+}
+img.icon1 {
+    height: 100%; 
+    position: absolute; 
+    right: -15px;
+}
+p.icon1 {
+    font-family: 'Advent Pro';
+    font-size: 22px;
+}
+p.icon1-2 {
+    font-family: 'Advent Pro';
+    font-size: 18px;
+    color: blue;
+}
+p.icon1-3 {
+    font-family: 'Alegreya SC';
+    font-size: 18px;
+    margin-top: 70px;
+    text-align: justify;
+}
+p.icon1-1 {
+    font-family: 'Advent Pro';
+    font-size: 22px;
+    color: white
+}
+p.icon1-2-2 {
+    font-family: 'Advent Pro';
+    font-size: 18px;
+    color: cyan;
+}
+p.icon1-3-3 {
+    font-family: 'Alegreya SC';
+    font-size: 18px;
+    margin-top: 70px;
+    text-align: justify;
+    color: white;
+}
+
