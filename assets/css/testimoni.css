@@ -68,6 +68,17 @@ img.icon1 {
     position: absolute; 
     right: -15px;
 }
+img.icon11 {
+    height: 100%; 
+    position: absolute; 
+    right: 25px;
+}
+img.icon111 {
+    height: 100%;
+    width: 100%; 
+    position: absolute; 
+    right: 0px;
+}
 p.icon1 {
     font-family: 'Advent Pro';
     font-size: 22px;
@@ -97,7 +108,7 @@ p.icon1-3-3 {
     font-family: 'Alegreya SC';
     font-size: 18px;
     margin-top: 70px;
-    text-align: justify;
+    
     color: white;
 }
 
