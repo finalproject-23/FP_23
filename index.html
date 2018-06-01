@@ -10,8 +10,14 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+  <!-- <script src="assets/js/loader.min.js"></script> -->
  </head>
  <body>
+  <!--preloader start-->
+  <div id='preloader'>
+   <div id='loader'></div>
+  </div>
+  <!--preloader end-->
 
   <header>
    <div class="logo-head bg-dark text-center"><a href="https://fieqh23.github.io/FP_23/"><img class="logo-hd" id="home" src="assets/img/icons/logofp72.png" height="50px" alt=""></a></div>
@@ -436,6 +442,9 @@
      header.classList.remove("sticky");
     }
    }
+  </script>
+  <script>
+   $(window).bind("load", function () { jQuery("#loader").fadeOut("slow"); jQuery("#preloader").delay(0).fadeOut(); });
   </script>
  </body>
 </html>
