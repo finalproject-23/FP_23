@@ -13,13 +13,13 @@
  </head>
  <body>
 
-  <header class="sticky-top">
+  <header>
    <div class="logo-head bg-dark text-center"><a href="https://fieqh23.github.io/FP_23/"><img class="logo-hd" id="home" src="assets/img/icons/logofp72.png" height="50px" alt=""></a></div>
-   <nav class="navbar navbar-expand-md navbar-dark navbar-trans">
+   <nav class="navbar navbar-expand-md navbar-dark navbar-trans" id="sticky-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavDropdown">
      <ul class="navbar-nav" id="nav">
-      <li class="nav-item menu-item current"><a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a></li>
+      <li class="nav-item menu-item current"><a class="nav-link" href="#tops">Home<span class="sr-only">(current)</span></a></li>
       <li class="nav-item menu-item"><a class="nav-link" href="#services">Services</a></li>
       <li class="nav-item menu-item"><a class="nav-link" href="#featured">Featured</a></li>
       <li class="nav-item menu-item"><a class="nav-link" href="#blog">Blog</a></li>
@@ -32,13 +32,13 @@
    </nav>
   </header>
 
-  <main class="main"> 
+  <main class="main">
    <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
      <li data-target="#myCarousel" data-slide-to="1"></li>
     </ol>
-    <div class="carousel-inner">
+    <div class="carousel-inner" id="tops">
      <div class="carousel-item active">
       <img class="first-slide" src="assets/pictures/pexels-photo-450271.jpeg" alt="First slide">
      </div>
@@ -56,10 +56,10 @@
      </a>
     </div>
 
-   <div class="container text-center py-2">
+   <div class="container text-center py-2"  id="services">
     <div class="col-12">
      <div class="md-auto">
-      <h3 id="services">OUR SERVICE</h3>
+      <h3>OUR SERVICE</h3>
       <h4 class="text-muted">This Is Our Service for Better Future</h4>
      </div>
      <div class="row">
@@ -113,10 +113,10 @@
     </div>
    </div>
 
-   <div class="porto text-center bg-dark text-light pb-3">
+   <div class="porto text-center bg-porto text-light pb-3" id="featured">
     <img src="assets/pictures/people-office-group-team.jpg" width="100%" alt="">
     <div class="container">
-     <h1 id="featured" class="py-2 text-white">Featured Project</h1>
+     <h1 class="py-2 text-white">Featured Project</h1>
      <p class="lead pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
      <div class="album">
       <div class="row">
@@ -186,9 +186,9 @@
      <div><p><a class="btn btn-lg btn-primary" href="https://fieqh23.github.io/FP_23/portofolio.html" role="button">Learn more</a></p></div>
     </div>
 
-    <div class="container blog-post py-5 col-lg-8 mx-auto">
+    <div class="container blog-post py-5 col-lg-8 mx-auto" id="blog">
      <div class="card text-center">
-      <div class="card-header" id="blog"><h3>From The Blog</h3></div>
+      <div class="card-header"><h3>From The Blog</h3></div>
       <div class="imgs-blog">
        <img class="card-img-top imgs" src="assets/pictures/pexels-photo-875514.jpeg" alt="">
        <div class="middle">
@@ -208,9 +208,9 @@
      </div>
     </div>
 
-    <div class="container col-lg-10 testimoni text-center ">
+    <div class="container col-lg-10 testimoni text-center" id="testi">
      <div id="testicrsl" class="carousel slide" data-ride="carousel">
-      <h3 class="h3-testi text-white" id="testi">What People Say</h3>
+      <h3 class="h3-testi text-white">What People Say</h3>
       <ol class="carousel-indicators">
        <li data-target="#testicrsl" data-slide-to="0" class="active"></li>
        <li data-target="#testicrsl" data-slide-to="1"></li>
@@ -280,8 +280,8 @@
     </div>
    </div>
 
-    <div class="container bg-white pb-2">
-     <div class="row justify-content-around align-items-center" id="sponsor">
+    <div class="container bg-white pb-2"  id="sponsor">
+     <div class="row justify-content-around align-items-center">
       <div class="col-md-3 col-6 align-items-center">
        <img src="assets/pictures/unilerver_blog.png" width="100%" alt="">
       </div>
@@ -337,7 +337,7 @@
        <ul class="navbar-nav">
         <li class="nav-item menu-item active"><a class="nav-link" href="https://fieqh23.github.io/FP_23/">HOME<span class="sr-only">(current)</span></a></li>
         <li class="nav-item menu-item"><a class="nav-link" href="https://fieqh23.github.io/FP_23/">BLOG</a></li>
-        <li class="nav-item menu-item"><a class="nav-link" href="https://fieqh23.github.io/FP_23/">GALLERY</a></li>
+        <li class="nav-item menu-item"><a class="nav-link" href="https://fieqh23.github.io/FP_23/portofolio.html">PORTOFOLIO</a></li>
         <li class="nav-item menu-item"><a class="nav-link" href="https://fieqh23.github.io/FP_23/contact-us.html">CONTACT</a></li>
         <li class="nav-item menu-item"><a class="nav-link" href="https://fieqh23.github.io/FP_23/about.html">ABOUT</a></li>
        </ul>
@@ -418,6 +418,22 @@
    $(document).ready(function() {
     $('#nav').onePageNav();
    });
+  </script>
+  <script>
+   window.onscroll = function () {
+    myFunction()
+   };
+
+   var header = document.getElementById("sticky-top");
+   var sticky = header.offsetTop;
+
+   function myFunction() {
+    if (window.pageYOffset >= sticky) {
+     header.classList.add("sticky");
+    } else {
+     header.classList.remove("sticky");
+    }
+   }
   </script>
  </body>
 </html>
