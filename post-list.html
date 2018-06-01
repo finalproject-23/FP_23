@@ -28,6 +28,8 @@
     <style type="text/css">
      
     </style>
+
+
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -65,11 +67,11 @@
         <h5 class="text-muted text-center pb-2 mb-5">Take A Look At What Have We Done</h5>
     </div>
 
-    <div class="container-fluid mx-auto">
+    <div class="container-fluid mx-auto" ng-app="test" ng-controller="pagectrl">
 
 
-    
-
+    <!-- halaman1 -->
+    <div ng-show="page1att"  class="" >
     <!-- content -->
     <div class="row mx-auto container-fluid">
         <div class="col-lg-1"></div>
@@ -78,16 +80,13 @@
         </div>
         <div class="col-lg-6">
             <h5 class="text-primary"> <a href="./post-1-page.html" class="linkhead">The Most Awesome Things We Do In Our Company History</a></h5>
-            <div ng-app="ngAnimate" ng-init="showme = true">
+            <div ng-app="test" ng-init="showme = true">
               <div class="sample-show-hide" ng-hide="showme">
                 <p class="line-clamp module text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
               </div>
               <input type="button" class="btn btn-outline-secondary sample-show-hide" value="Show" ng-click="showme=!showme">
               <a href="./post-1-page.html"><button class="btn btn-outline-secondary mt-0">READ MORE</button></a>
             </div>
-            
-            
-            
         </div>
         <div class="col-lg-1"></div>
     </div>
@@ -137,16 +136,155 @@
         <div class="col-lg-10"><hr></div>
         <div class="col-lg-1"></div>
     </div>
+  </div>
+  <!-- halaman1 -->
 
+  <!-- halaman2 -->
+  <div ng-show="page2att"  class="" >
+    <!-- content -->
+    <div class="row mx-auto container-fluid">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4 test">
+            <a href="./post-1-page.html"><img src="./assets/img/office.jpg" alt="" class="img-fluid img-thumbnail img-content test"></a>
+        </div>
+        <div class="col-lg-6">
+            <h5 class="text-primary"> <a href="./post-1-page.html" class="linkhead">The Most Awesome Things We Do In Our Company History</a></h5>
+            <div ng-app="test" ng-init="showme = true">
+              <div class="sample-show-hide" ng-hide="showme">
+                <p class="line-clamp module text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              </div>
+              <input type="button" class="btn btn-outline-secondary sample-show-hide" value="Show" ng-click="showme=!showme">
+              <a href="./post-1-page.html"><button class="btn btn-outline-secondary mt-0">READ MORE</button></a>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <!-- separator -->
+    <div class="row mx-auto container-fluid">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10"><hr></div>
+        <div class="col-lg-1"></div>
+    </div>
+
+    <!-- content -->
+    <div class="row mx-auto container-fluid">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4 test">
+            <a href="./post-1-page.html"><img src="./assets/img/office.jpg" alt="" class="img-fluid img-thumbnail img-content test"></a>
+        </div>
+        <div class="col-lg-6">
+            <h5 class="text-primary"> <a href="./post-1-page.html" class="linkhead">The Most Awesome Things We Do In Our Company History</a></h5>
+            <p class="line-clamp module text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <a href="./post-1-page.html"><button class="btn btn-outline-secondary mt-0">READ MORE</button></a>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <!-- separator -->
+    <div class="row mx-auto container-fluid">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10"><hr></div>
+        <div class="col-lg-1"></div>
+    </div>
+
+    <!-- content -->
+    <div class="row mx-auto container-fluid">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4 test">
+            <a href="./post-1-page.html"><img src="./assets/img/office.jpg" alt="" class="img-fluid img-thumbnail img-content test"></a>
+        </div>
+        <div class="col-lg-6">
+            <h5 class="text-primary"> <a href="./post-1-page.html" class="linkhead">The Most Awesome Things We Do In Our Company History</a></h5>
+            <p class="line-clamp module text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <a href="./post-1-page.html"><button class="btn btn-outline-secondary mt-0">READ MORE</button></a>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <!-- separator -->
+    <div class="row mx-auto container-fluid">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10"><hr></div>
+        <div class="col-lg-1"></div>
+    </div>
+  </div>
+  <!-- Halaman 2 -->
+
+  <!-- halaman3 -->
+  <div ng-show="page3att"  class="" >
+      <!-- content -->
+      <div class="row mx-auto container-fluid">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-4 test">
+              <a href="./post-1-page.html"><img src="./assets/img/discussion.jpg" alt="" class="img-fluid img-thumbnail img-content test"></a>
+          </div>
+          <div class="col-lg-6">
+              <h5 class="text-primary"> <a href="./post-1-page.html" class="linkhead">The Most Awesome Things We Do In Our Company History</a></h5>
+              <div ng-app="test" ng-init="showme = true">
+                <div class="sample-show-hide" ng-hide="showme">
+                  <p class="line-clamp module text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <input type="button" class="btn btn-outline-secondary sample-show-hide" value="Show" ng-click="showme=!showme">
+                <a href="./post-1-page.html"><button class="btn btn-outline-secondary mt-0">READ MORE</button></a>
+              </div>
+          </div>
+          <div class="col-lg-1"></div>
+      </div>
+      <!-- separator -->
+      <div class="row mx-auto container-fluid">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10"><hr></div>
+          <div class="col-lg-1"></div>
+      </div>
+  
+      <!-- content -->
+      <div class="row mx-auto container-fluid">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-4 test">
+              <a href="./post-1-page.html"><img src="./assets/img/office.jpg" alt="" class="img-fluid img-thumbnail img-content test"></a>
+          </div>
+          <div class="col-lg-6">
+              <h5 class="text-primary"> <a href="./post-1-page.html" class="linkhead">The Most Awesome Things We Do In Our Company History</a></h5>
+              <p class="line-clamp module text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <a href="./post-1-page.html"><button class="btn btn-outline-secondary mt-0">READ MORE</button></a>
+          </div>
+          <div class="col-lg-1"></div>
+      </div>
+      <!-- separator -->
+      <div class="row mx-auto container-fluid">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10"><hr></div>
+          <div class="col-lg-1"></div>
+      </div>
+  
+      <!-- content -->
+      <div class="row mx-auto container-fluid">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-4 test">
+              <a href="./post-1-page.html"><img src="./assets/img/discussion.jpg" alt="" class="img-fluid img-thumbnail img-content test"></a>
+          </div>
+          <div class="col-lg-6">
+              <h5 class="text-primary"> <a href="./post-1-page.html" class="linkhead">The Most Awesome Things We Do In Our Company History</a></h5>
+              <p class="line-clamp module text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <a href="./post-1-page.html"><button class="btn btn-outline-secondary mt-0">READ MORE</button></a>
+          </div>
+          <div class="col-lg-1"></div>
+      </div>
+      <!-- separator -->
+      <div class="row mx-auto container-fluid">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10"><hr></div>
+          <div class="col-lg-1"></div>
+      </div>
+    </div>
+    <!-- halaman3 -->
     
-
+    <div></div>
     <div class="btn-toolbar justify-content-center pb-5 mt-5" role="toolbar" aria-label="Toolbar with button groups">
         <div class="btn-group mr-2" role="group" aria-label="First group">
-          <button type="button" class="btn btn-outline-secondary">PREVIOUS</button>
-          <button type="button" class="btn btn-outline-secondary active">1</button>
-          <button type="button" class="btn btn-outline-secondary">2</button>
-          <button type="button" class="btn btn-outline-secondary">3</button>
-          <button type="button" class="btn btn-outline-secondary">NEXT</button>
+          <button type="button" class="btn btn-outline-secondary" ng-click="back()">PREVIOUS</button>
+          <button type="button" class="btn btn-outline-secondary" ng-click="page1()" id="page1">1</button>
+          <button type="button" class="btn btn-outline-secondary" ng-click="page2()">2</button>
+          <button type="button" class="btn btn-outline-secondary" ng-click="page3()">3</button>
+          <button type="button" class="btn btn-outline-secondary" ng-click="nextt()">NEXT</button>
         </div>
       </div>
 
@@ -224,6 +362,85 @@
                  </div>
              </div>
             </footer>
+    
+            <script>
+                var app = angular.module('test', ['ngAnimate']);
+                app.controller('pagectrl', function($scope){
+                  $scope.page1att = true;
+                  $scope.page2att = false;
+                  $scope.page3att = false;
+                  
+                  $scope.page1 = function(){
+                    $scope.page1att = true;
+                    $scope.page2att = false;
+                    $scope.page3att = false;
+                  };
+                  $scope.page2 = function(){
+                    $scope.page1att = false;
+                    $scope.page2att = true;
+                    $scope.page3att = false;
+                  };
+                  $scope.page3 = function(){
+                    $scope.page1att = false;
+                    $scope.page2att = false;
+                    $scope.page3att = true;
+                  };
+
+                  // function Test($scope){
+                  //   $scope.page1att;
+                  //   $scope.page2att;
+                  //   $scope.page3att;
+                  //   $scope.back = ('page1att','page2att','page3att', function(){
+                  //   if ($scope.page1att == true){
+            
+                  //   } else if ($scope.page2att == true){
+                  //     $scope.page1att = true;
+                  //     $scope.page2att = false;
+                  //     $scope.page3att = false;
+                  //   }
+                  //   else if ($scope.page3att == true){
+                  //     $scope.page1att = false;
+                  //     $scope.page2att = true;
+                  //     $scope.page3att = false;
+                  //   }
+                  // });
+                  // }
+            
+                  $scope.back = ('page1att','page2att','page3att', function(){
+                    if ($scope.page1att == true){
+                      
+                    } else if ($scope.page2att == true){
+                      $scope.page1att = true;
+                      $scope.page2att = false;
+                      $scope.page3att = false;
+                    }
+                    else if ($scope.page3att == true){
+                      $scope.page1att = false;
+                      $scope.page2att = true;
+                      $scope.page3att = false;
+                    }
+                  });
+                  
+                  $scope.nextt = ('page1att','page2att','page3att', function(){
+                    if ($scope.page1att == true){
+                      $scope.page1att = false;
+                      $scope.page2att = true;
+                      $scope.page3att = false;
+                    } else if ($scope.page2att == true){
+                      $scope.page1att = false;
+                      $scope.page2att = false;
+                      $scope.page3att = true;
+                    }
+                    else if ($scope.page3att == true){
+                      
+                    }
+                  });
+                  
+                });
+            
+                
+              </script>
+    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
