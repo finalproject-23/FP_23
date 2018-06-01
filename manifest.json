@@ -1,0 +1,48 @@
+{
+ "name": "ArtTerror23,Inc.",
+ "short_name": "ArtTerror23",
+ "description": "Company Profile Web Page",
+ "lang": "en-US",
+ "dir": "ltr",
+ "theme_color": "#1c2636",
+ "start_url": ".",
+ "background_color": "#fff",
+ "display": "standalone",
+ "orientation": "portrait-primary",
+ "icons": [{
+   "src": "assets/img/icon72.png",
+   "sizes": "72x72",
+   "type": "image/png"
+  }, {
+   "src": "assets/img/icon96.png",
+   "sizes": "96x96",
+   "type": "image/png"
+  }, {
+   "src": "assets/img/icon128.png",
+   "sizes": "128x128",
+   "type": "image/png"
+  }, {
+   "src": "assets/img/icon144.png",
+   "sizes": "144x144",
+   "type": "image/png"
+  }, {
+   "src": "assets/img/icon152.png",
+   "sizes": "152x152",
+   "type": "image/png"
+  }, {
+   "src": "assets/img/icon192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  }, {
+   "src": "assets/img/icon384.png",
+   "sizes": "384x384",
+   "type": "image/png"
+  }, {
+   "src": "assets/img/icon512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }, {
+   "src":"assets/img/icon.svg",
+   "sizes":"72x72 96x96 128x128 152x152 192x192 256x256 384x384 512x512"
+  }]
+}
