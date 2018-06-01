@@ -197,22 +197,26 @@
   $(document).ready(function(){
     var page = 0;
       $("#page1").click(function(){
+        page = 1;
         $("button.btn").removeClass("active");
         $(".col-md-4").hide(50);
         $(this).addClass("active");
+
           $(".por-1").each(function(){
             $(this).fadeIn("slow");
           });
       });
       $("#page2").click(function(){
+        page = 2;
         $("button.btn").removeClass("active");
-        $(".col-md-4").hide(50);
+        $(".col-md-4").hide(50); 
         $(this).addClass("active");
           $(".por-2").each(function(){
             $(this).fadeIn("slow");
           });
       });
       $("#page3").click(function(){
+        page = 3;
         $("button.btn").removeClass("active");
         $(this).addClass("active");
         $(".col-md-4").hide(50);
