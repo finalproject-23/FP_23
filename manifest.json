@@ -6,7 +6,6 @@
  "dir": "ltr",
  "theme_color": "#1c2636",
  "start_url": ".",
- "scope": "",
  "background_color": "#fff",
  "display": "standalone",
  "orientation": "portrait-primary",
