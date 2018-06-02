@@ -132,6 +132,9 @@ img.logo-hd {
  margin-bottom: 4rem;
 }
 /* Since positioning the image, we need to help out the caption */
+.pd-top-15 {
+ padding-top: 13rem
+}
 .carousel-caption {
  bottom: 3rem;
  z-index: 10;
