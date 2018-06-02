@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/fontawesome-all.css" />
+  <link rel="stylesheet" href="assets/css/portofolio.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
   <!-- theme-color defines the top bar color (blue in my case)-->
   <meta name="theme-color" content="#1c2636" />
@@ -35,14 +37,14 @@
   <!--preloader end-->
 
   <header>
-   <div class="logo-head bg-dark text-center"><a href="https://fieqh23.github.io/FP_23/"><img class="logo-hd" id="home" src="assets/img/icons/logofp72.png" height="50px" alt=""></a></div>
+   <div class="logo-head bg-dark text-center py-2"><a href="https://fieqh23.github.io/FP_23/"><img class="logo-hd" id="home" src="assets/img/icons/logofp72.png" height="50px" alt=""></a></div>
    <nav class="navbar navbar-expand-md navbar-dark navbar-trans" id="sticky-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavDropdown">
      <ul class="navbar-nav" id="nav">
       <li class="nav-item menu-item current"><a class="nav-link" href="#tops">Home<span class="sr-only">(current)</span></a></li>
       <li class="nav-item menu-item"><a class="nav-link" href="#services">Services</a></li>
-      <li class="nav-item menu-item"><a class="nav-link" href="#featured">Featured</a></li>
+      <li class="nav-item menu-item"><a class="nav-link" href="#featured">Project</a></li>
       <li class="nav-item menu-item"><a class="nav-link" href="#blog">Blog</a></li>
       <li class="nav-item menu-item"><a class="nav-link" href="#testi">Testimonial</a></li>
       <li class="nav-item menu-item"><a class="nav-link" href="#sponsor">Sponsor</a></li>
@@ -96,7 +98,7 @@
      <div class="row">
       <div class="col-lg-3 col-md-6 py-3">
        <div class="img-srvcs mx-auto">
-        <img class="rounded-circle imgs" src="assets/pictures/b-008-300x300.jpg" width="100%" alt="" />
+        <a href="service.html"><img class="rounded-circle imgs" src="assets/pictures/b-008-300x300.jpg" width="100%" alt="" /></a>
         <div class="middle">
          <div class="text"><i class="fas fa-hand-holding-usd fa-3x"></i></div>
         </div>
@@ -106,7 +108,7 @@
       </div>
       <div class="col-lg-3 col-md-6 py-3">
        <div class="img-srvcs mx-auto">
-        <img class="rounded-circle imgs" src="assets/pictures/b-009-300x300.jpg" width="100%" alt="" />
+          <a href="service.html"><img class="rounded-circle imgs" src="assets/pictures/b-009-300x300.jpg" width="100%" alt="" /></a>
         <div class="middle">
          <div class="text">
           <i class="fas fa-paint-brush fa-3x"></i>
@@ -118,7 +120,7 @@
       </div>
       <div class="col-lg-3 col-md-6 py-3">
        <div class="img-srvcs mx-auto">
-        <img class="rounded-circle imgs" src="assets/pictures/b-005-300x300.jpg" width="100%" alt="" />
+          <a href="service.html"><img class="rounded-circle imgs" src="assets/pictures/b-005-300x300.jpg" width="100%" alt="" /></a>
         <div class="middle">
          <div class="text">
           <i class="fas fa-chart-line fa-3x"></i>
@@ -130,7 +132,7 @@
       </div>
       <div class="col-lg-3 col-md-6 py-3">
        <div class="img-srvcs mx-auto">
-        <img class="rounded-circle imgs" src="assets/pictures/b-001-300x300.jpg" width="100%" alt="" />
+          <a href="service.html"><img class="rounded-circle imgs" src="assets/pictures/b-001-300x300.jpg" width="100%" alt="" /></a>
         <div class="middle">
          <div class="text">
           <i class="fas fa-video fa-3x"></i>
@@ -148,68 +150,44 @@
     <div style="overflow: hidden;max-height: 350px">
      <img src="assets/pictures/people-office-group-team.jpg" style="margin-top: -10%;" width="100%" alt="">
     </div>
-    <div class="container">
-     <h1 class="py-2 text-white">Featured Project</h1>
+    <div class="container" ng-app="">
+     <h1 class="pt-4 text-white">Our Project</h1>
      <p class="lead pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
      <div class="album">
       <div class="row">
        <div class="col-lg-4 col-md-6">
         <div class="mb-4">
-         <div style="overflow: hidden;">
-          <img class="card-img-top zoom" style="min-height: 17rem" src="assets/pictures/0_pemH-XsqF5BFiiVm.jpg" alt="">
+          <div class="card mb-4 box-shadow shadow-sm rounded" ng-include="'blog/portofolio/portofolio1.html'" style="overflow: hidden;">
          </div>
-         <div class="card-body bg-light text-dark">
-          <h4 class="card-text">Heading 3</h4>
+         </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+         <div class="mb-4">
+          <div class="card mb-4 box-shadow shadow-sm rounded" ng-include="'blog/portofolio/portofolio2.html'" style="overflow: hidden;">
           </div>
          </div>
         </div>
         <div class="col-lg-4 col-md-6">
          <div class="mb-4">
-          <div style="overflow: hidden;">
-           <img class="card-img-top zoom" style="min-height: 17rem" src="assets/pictures/58c91e077fce8_thumb900.jpg" alt="">
-          </div>
-          <div class="card-body bg-light text-dark">
-           <h4 class="card-text">Heading 3</h4>
-          </div>
-         </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-         <div class="mb-4">
-          <div style="overflow: hidden;">
-           <img class="card-img-top zoom" style="min-height: 17rem" src="assets/pictures/freee-ui-mockup-psd-1000x681.jpg" alt="">
-          </div>
-          <div class="card-body bg-light text-dark">
-           <h4 class="card-text">Heading 3</h4>
+          <div class="card mb-4 box-shadow shadow-sm rounded" ng-include="'blog/portofolio/portofolio3.html'" style="overflow: hidden;">
           </div>
          </div>
         </div>
        <div class="col-lg-4 col-md-6">
         <div class="mb-4">
-         <div style="overflow: hidden;">
-          <img class="card-img-top zoom" style="min-height: 17rem" src="assets/pictures/0_pemH-XsqF5BFiiVm.jpg" alt="">
-         </div>
-         <div class="card-body bg-light text-dark">
-          <h4 class="card-text">Heading 3</h4>
+          <div class="card mb-4 box-shadow shadow-sm rounded" ng-include="'blog/portofolio/portofolio4.html'" style="overflow: hidden;">
           </div>
          </div>
         </div>
         <div class="col-lg-4 col-md-6">
          <div class="mb-4">
-          <div style="overflow: hidden;">
-           <img class="card-img-top zoom" style="min-height: 17rem" src="assets/pictures/58c91e077fce8_thumb900.jpg" alt="">
-          </div>
-          <div class="card-body bg-light text-dark">
-           <h4 class="card-text">Heading 3</h4>
+            <div class="card mb-4 box-shadow shadow-sm rounded" ng-include="'blog/portofolio/portofolio5.html'" style="overflow: hidden;">
           </div>
          </div>
         </div>
         <div class="col-lg-4 col-md-6">
          <div class="mb-4">
-          <div style="overflow: hidden;">
-           <img class="card-img-top zoom" style="min-height: 17rem" src="assets/pictures/freee-ui-mockup-psd-1000x681.jpg" alt="">
-          </div>
-          <div class="card-body bg-light text-dark">
-           <h4 class="card-text">Heading 3</h4>
+          <div class="card mb-4 box-shadow shadow-sm rounded" ng-include="'blog/portofolio/portofolio6.html'" style="overflow: hidden;">
           </div>
          </div>
         </div>
@@ -221,7 +199,7 @@
 
     <div class="container blog-post pt-5 col-lg-8 mx-auto" id="blog">
      <div class="card text-center">
-      <div class="card-header text-primary"><h3>From The Blog</h3></div>
+      <div class="card-header text-primary"><h3>Our Blog</h3></div>
       <div class="imgs-blog">
        <img class="card-img-top imgs" src="assets/pictures/pexels-photo-875514.jpeg" alt="">
        <div class="middle">
@@ -233,7 +211,7 @@
       <div class="card-body">
        <h4 class="card-title">Gadget Sama Gadget Lainnya Sedang di Meja</h4>
        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloremque reiciendis dolore perferendis nisi adipisci quasi atque assumenda, nulla culpa eligendi illum ipsam sequi aliquid aspernatur quod reprehenderit voluptatum sed.</p>
-       <a href="#" class="btn btn-secondary">Read More</a>
+       <a href="https://fieqh23.github.io/FP_23/post-1-page.html" class="btn btn-secondary">Read More</a>
       </div>
       <div class="card-footer text-muted">
        <a href="https://fieqh23.github.io/FP_23/post-list.html" class="btn btn-outline-primary">View More ...</a>
