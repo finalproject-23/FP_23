@@ -35,7 +35,8 @@
   }
 
   .sample-show-hide {
-    transition: all linear 0.5s;
+    transition: all ease-in 0.25s;
+  
   }
   .sample-show-hide.ng-hide {
     opacity: 0;
