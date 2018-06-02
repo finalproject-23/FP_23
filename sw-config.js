@@ -13,5 +13,4 @@ module.exports = {
   'assets/**/**.woff',
   'assets/**/**.woff2'
  ],
- stripPrefix: 'public',
 }
