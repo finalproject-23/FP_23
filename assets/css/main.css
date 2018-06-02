@@ -227,6 +227,12 @@ img.logo-hd {
  transform: scale(1.3)
 }
 
+.zoom-pur {
+  transition: transform .2s; /* Animation */
+ }
+.zoom-pur:hover {
+  transform: scale(1.1);
+ }
 
 /* Blog */
 .imgs-blog {
