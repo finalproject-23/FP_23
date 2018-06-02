@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/fontawesome-all.css">
-  <link rel="stylesheet" href="./assets/css/faq.css">
 
   <!-- Goolge Fonts -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -50,171 +49,141 @@
 
     <div ng-app="faq" ng-controller="faqcontroller" class="container-fluid kotakutama px-0">
      <div class="kotakkedua">
-      <div class="container">
-       <div class="row pt-2">
-        <ul>
-         <li class="mx-auto ">
-          <div class="tanya" ng-click="question1func()">
-           <i class="fas fa-chevron-circle-right text-danger"></i>
-            Apa sajakah hal yang dikerjakan oleh perusahaan ini?
-          </div>
-          <div class="ml-3 fadein" ng-show="question1">
+      <div class="container col-xl-5 col-lg-6 col-md-8 col-10 py-3">
+       <ul class="px-1">
+        <div class="row pt-2">
+         <li class="faq">
+          <div class="tanya" ng-click="question1func()">Apa sajakah hal yang dikerjakan oleh perusahaan ini?</div>
+          <div class="fadein" ng-show="question1">
            <p class="jawab">Semua hal yang berkaitan dengan IT seperti Web Development,Design,dll.</p>
           </div> 
          </li>
-        </ul>
-       </div>
-       <div class="row pt-2">
-        <ul>
-         <li class="mx-auto ">
-          <div class="tanya" ng-click="question2func()">
-           <i class="fas fa-chevron-circle-right text-danger"></i>
-            Apa sajakah hal yang dikerjakan oleh perusahaan ini?
-          </div>
-          <div class="ml-3 fadein" ng-show="question2">
+        </div>
+        <div class="row pt-2">
+         <li class="faq">
+          <div class="tanya" ng-click="question2func()">Lorem ipsum?</div>
+          <div class="fadein" ng-show="question2">
+           <p class="jawab">Yes Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fuga rem tempore, cumque aut hic corrupti.</p>
+          </div> 
+         </li>
+        </div>
+        <div class="row pt-2">
+         <li class="faq">
+          <div class="tanya" ng-click="question3func()">Apa sajakah hal yang dikerjakan oleh perusahaan ini?</div>
+          <div class="fadein" ng-show="question3">
            <p class="jawab">Semua hal yang berkaitan dengan IT seperti Web Development,Design,dll.</p>
           </div> 
          </li>
-        </ul>
-       </div>
-       <div class="row pt-2">
-        <ul>
-         <li class="mx-auto ">
-          <div class="tanya" ng-click="question3func()">
-           <i class="fas fa-chevron-circle-right text-danger"></i>
-            Apa sajakah hal yang dikerjakan oleh perusahaan ini?
-          </div>
-          <div class="ml-3 fadein" ng-show="question3">
+        </div>
+        <div class="row pt-2">
+         <li class="faq">
+          <div class="tanya" ng-click="question4func()">Apa sajakah hal yang dikerjakan oleh perusahaan ini?</div>
+          <div class="fadein" ng-show="question4">
            <p class="jawab">Semua hal yang berkaitan dengan IT seperti Web Development,Design,dll.</p>
           </div> 
          </li>
-        </ul>
-       </div>
-       <div class="row pt-2">
-        <ul>
-         <li class="mx-auto ">
-          <div class="tanya" ng-click="question4func()">
-           <i class="fas fa-chevron-circle-right text-danger"></i>
-            Apa sajakah hal yang dikerjakan oleh perusahaan ini?
-          </div>
-          <div class="ml-3 fadein" ng-show="question4">
+        </div>
+        <div class="row pt-2">
+         <li class="faq">
+          <div class="tanya" ng-click="question5func()">Apa sajakah hal yang dikerjakan oleh perusahaan ini?</div>
+          <div class="fadein" ng-show="question5">
            <p class="jawab">Semua hal yang berkaitan dengan IT seperti Web Development,Design,dll.</p>
           </div> 
          </li>
-        </ul>
-       </div>
-       <div class="row pt-2">
-        <ul>
-         <li class="mx-auto ">
-          <div class="tanya" ng-click="question5func()">
-           <i class="fas fa-chevron-circle-right text-danger"></i>
-            Apa sajakah hal yang dikerjakan oleh perusahaan ini?
-          </div>
-          <div class="ml-3 fadein" ng-show="question5">
+        </div>
+        <div class="row pt-2">
+         <li class="faq">
+          <div class="tanya" ng-click="question6func()">Apa sajakah hal yang dikerjakan oleh perusahaan ini?</div>
+          <div class="fadein" ng-show="question6">
            <p class="jawab">Semua hal yang berkaitan dengan IT seperti Web Development,Design,dll.</p>
           </div> 
          </li>
-        </ul>
-       </div>
-       <div class="row pt-2">
-        <ul>
-         <li class="mx-auto ">
-          <div class="tanya" ng-click="question6func()">
-           <i class="fas fa-chevron-circle-right text-danger"></i>
-            Apa sajakah hal yang dikerjakan oleh perusahaan ini?
-          </div>
-          <div class="ml-3 fadein" ng-show="question6">
-           <p class="jawab">Semua hal yang berkaitan dengan IT seperti Web Development,Design,dll.</p>
-          </div> 
-         </li>
-        </ul>
-       </div>
+        </div>
+       </ul>
       </div>
      </div>
     </div>
    </div>
 
-
-  <footer class="bg-dark">
-   <div class="container">
- <div class="row pt-3 pb-3">
-  <img src="assets/img/icons/logofp128.png"  class="col-auto" height="40px" alt="">
- </div>
- <div class="row text-white text-center justify-content-center">
-  <p class="col-lg-8">This core philosophy stands at the center of everything we make. The brands we build and the experiences we create live at the intersection of clarity and surprise, and are positioned to matter in culture through shared values and ideals. Simplicity done right is what connects a brand with its audience, creates a winning strategy, and drives our making, day in, day out.</p>
- </div>
- <hr class="bg-white">
- <div class="row justify-content-center">
-  <div class="col-lg-3 col-md-7 col-sm-10 col-12" style="color:whitesmoke;">
-   <div class="row">
-    <div class="my-auto col-3 col-md-2 col-lg-3 text-center"><i class="fas fa-map-marker-alt fa-2x"></i></div>
-    <div class=""><p><strong style="font-size: 20px" class="font-weight-bold">Address</strong><br>121 Rock Sreet, 21 Avenue,<br>New York, NY 92103-9000</p>
+   <footer class="bg-dark">
+    <div class="container">
+     <div class="row justify-content-center pt-3 pb-3">
+      <img src="assets/img/icons/logofp128.png"  class="col-auto" height="40px" alt="">
+     </div>
+     <div class="row text-white text-center justify-content-center">
+      <p class="col-lg-8">This core philosophy stands at the center of everything we make. The brands we build and the experiences we create live at the intersection of clarity and surprise, and are positioned to matter in culture through shared values and ideals. Simplicity done right is what connects a brand with its audience, creates a winning strategy, and drives our making, day in, day out.</p>
+     </div>
+     <hr class="bg-white">
+     <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-7 col-sm-10 col-12" style="color:whitesmoke;">
+       <div class="row">
+        <div class="my-auto col-3 col-md-2 col-lg-3 text-center"><i class="fas fa-map-marker-alt fa-2x"></i></div>
+        <div class=""><p><strong style="font-size: 20px" class="font-weight-bold">Address</strong><br>121 Rock Sreet, 21 Avenue,<br>New York, NY 92103-9000</p></div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-7 col-sm-10 col-12" style="color:whitesmoke">
+       <div class="row">
+        <div class="my-auto col-3 col-md-2 col-lg-3 text-center"><i class="fas fa-phone fa-2x"></i></div>
+        <p><strong style="font-size: 20px" class="font-weight-bold">Phone</strong><br>+62 812-2889-2803<br>+62 812-2889-2803</p>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-7 col-sm-10 col-12" style="color:whitesmoke">
+       <div class="row">
+        <div class="my-auto col-3 col-md-2 col-lg-3 text-center"><i class="fas fa-envelope fa-2x"></i></div>
+        <div class="bg-dark"><p> <strong style="font-size: 20px" class="font-weight-bold">E-Mail</strong><br>admin@arterror.co.id<br>artterror23@gmail.com</p></div>
+       </div>
+      </div>
+     </div>
+     <br>
+     <div class="row justify-content-center text-center text-light">
+      <!-- Button sosial media -->
+      <ul class="list-unstyled list-inline text-center">
+       <li class="list-inline-item"><a href="#" class="btn-floating mx-1"><i class="fab fa-facebook fa-2x text-white"></i></a></li>
+       <li class="list-inline-item"><a href="#" class="btn-floating mx-1"><i class="fab fa-twitter-square fa-2x text-white"></i></a></li>
+       <li class="list-inline-item"><a href="#" class="btn-floating mx-1"><i class="fab fa-google-plus-square fa-2x text-white"></i></a></li>
+       <li class="list-inline-item"><a href="#" class="btn-floating mx-1"><i class="fab fa-linkedin fa-2x text-white"></i></a></li>
+      </ul>
+     </div>
     </div>
-   </div>
-  </div>
-  <div class="col-lg-3 col-md-7 col-sm-10 col-12" style="color:whitesmoke">
-   <div class="row">
-    <div class="my-auto col-3 col-md-2 col-lg-3 text-center"><i class="fas fa-phone fa-2x"></i></div>
-  <p><strong style="font-size: 20px" class="font-weight-bold">Phone</strong><br>+62 812-2889-2803<br>+62 812-2889-2803</p>
+    <div class="container-fluid">
+     <div class="row justify-content-center" style="background-color: rgba(0, 0, 0,0.3)">
+      <p class="text-light pt-2 text-center">© 2018 Copyright: <a href="http://artterror23.ga"><strong>Arterror,inc.</strong></a></p>
+     </div>
     </div>
-   </div>
-   <div class="col-lg-3 col-md-7 col-sm-10 col-12" style="color:whitesmoke">
-    <div class="row">
-  <div class="my-auto col-3 col-md-2 col-lg-3 text-center"><i class="fas fa-envelope fa-2x"></i></div>
-  <div class="bg-dark"><p> <strong style="font-size: 20px" class="font-weight-bold">E-Mail</strong><br>admin@arterror.co.id<br>artterror23@gmail.com</p></div>
-    </div>
-   </div>
-  </div>
-  <br> 
-  <div class="row justify-content-center text-center text-light">
-   <!-- Button sosial media -->
-   <ul class="list-unstyled list-inline text-center">
-    <li class="list-inline-item"><a href="#" class="btn-floating mx-1"><i class="fab fa-facebook fa-2x text-white"></i></a></li>
-    <li class="list-inline-item"><a href="#" class="btn-floating mx-1"><i class="fab fa-twitter-square fa-2x text-white"></i></a></li>
-    <li class="list-inline-item"><a href="#" class="btn-floating mx-1"><i class="fab fa-google-plus-square fa-2x text-white"></i></a></li>
-    <li class="list-inline-item"><a href="#" class="btn-floating mx-1"><i class="fab fa-linkedin fa-2x text-white"></i></a></li>
-   </ul>
-  </div>
- </div>
- <div class="container-fluid">
-  <div class="row justify-content-center" style="background-color: rgba(0, 0, 0,0.3)">
-   <p class="text-light pt-2 text-center">© 2018 Copyright: <a href="http://artterror23.ga"><strong>Arterror,inc.</strong></a></p>
-  </div>
- </div>
    </footer>
-
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+    
+   <script src="assets/js/jquery.min.js"></script>
+   <script src="assets/js/popper.min.js"></script>
+   <script src="assets/js/bootstrap.min.js"></script>
+   
+  <script>
+   var app = angular.module('faq', ['ngAnimate']);
+   app.controller('faqcontroller', function($scope){
+    $scope.question1 = false;
+    $scope.question2 = false;
+    $scope.question3 = false;
+    $scope.question4 = false;
+    $scope.question5 = false;
+    $scope.question6 = false;
+    $scope.question1func = function(){
+     $scope.question1 = !$scope.question1;
+    };
+    $scope.question2func = function(){
+     $scope.question2 = !$scope.question2;
+    };
+    $scope.question3func = function(){
+     $scope.question3 = !$scope.question3;
+    };
+    $scope.question4func = function(){
+     $scope.question4 = !$scope.question4;
+    };
+    $scope.question5func = function(){
+     $scope.question5 = !$scope.question5;
+    };
+    $scope.question6func = function(){
+     $scope.question6 = !$scope.question6;
+    };
+   });
+  </script>
  </body>
-
- <script>
-  var app = angular.module('faq', ['ngAnimate']);
-  app.controller('faqcontroller', function($scope){
-   $scope.question1 = false;
-   $scope.question2 = false;
-   $scope.question3 = false;
-   $scope.question4 = false;
-   $scope.question5 = false;
-   $scope.question6 = false;
-   $scope.question1func = function(){
-    $scope.question1 = !$scope.question1;
-   };
-   $scope.question2func = function(){
-    $scope.question2 = !$scope.question2;
-   };
-   $scope.question3func = function(){
-    $scope.question3 = !$scope.question3;
-   };
-   $scope.question4func = function(){
-    $scope.question4 = !$scope.question4;
-   };
-   $scope.question5func = function(){
-    $scope.question5 = !$scope.question5;
-   };
-   $scope.question6func = function(){
-    $scope.question6 = !$scope.question6;
-   };
-  });
- </script>
 </html>
