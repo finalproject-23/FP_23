@@ -1,5 +1,6 @@
 module.exports = {
  staticFileGlobs: [
+  '**/**.html',
   'assets/**/**.css',
   'assets/**/**.html',
   'assets/**/**.jpg',
@@ -13,4 +14,8 @@ module.exports = {
   'assets/**/**.woff',
   'assets/**/**.woff2'
  ],
-}
+ runtimeCaching: [{
+  urlPattern: /^https:\/\/artterror23\.ga\//,
+  handler: 'networkFirst'
+ }]
+};
