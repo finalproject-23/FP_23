@@ -1,43 +1,43 @@
 <!doctype html>
 <html lang="en">
   <head>
-      <title>Our Portofolio - ArtTerror23, Inc.</title>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="shortcut icon" href="assets/img/icons/favicon-outline72.png" type="image/x-icon" />
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="assets/js/bootstrap.min.js"></script>
-  
-      <!-- Main CSS -->
-      <link rel="stylesheet" href="assets/css/main.css">
-  
-      <!-- proper -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  
-      <!-- AngularJS  -->
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-  
-      <script src="assets/js/jquery.twbsPagination.js"></script>
-      
-      <!-- Font Awesome -->
-      <link rel="stylesheet" href="assets/css/fontawesome-all.css">
-  
-      <!-- Goolge Fonts -->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
-  
-      <link rel="stylesheet" href="assets/css/portofolio.css">
+    <title>Our Portofolio - ArtTerror23, Inc.</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/img/icons/favicon-outline72.png" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- proper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- AngularJS  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <script src="assets/js/jquery.twbsPagination.js"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+
+    <!-- Goolge Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/portofolio.css">
   </head>
   <body ng-app="">
     <header>
       <div class="logo-head bg-dark text-center">
        <a href="https://fieqh23.github.io/FP_23/"><img class="logo-hd" src="assets/img/icons/logofp72.png" height="50px" alt=""></a>    
       </div>
-      <nav class="navbar navbar-expand-md navbar-dark navbar-trans" style="z-index: 0;">
+      <nav class="navbar navbar-expand-md navbar-dark navbar-trans" style="z-index: -1;">
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -53,15 +53,15 @@
        </div>
       </nav>
      </header>
-    <main role="main" class="bg-white pt-4">
+    <main role="main" class="bg-light pt-4">
     <h2 class="h3 text-center"><strong>OUR PROJECT</strong></h2>
     <h6 class="text-center text-muted pb-3">Defines a container for multiple image resources</h6>
     <div class="btn-toolbar justify-content-center" style="overflow: hidden;" role="toolbar" aria-label="Toolbar with button groups">
       <div class="btn-group mx-auto mr-2 shadow-sm box-shadow" style="overflow-x: auto;" role="group" aria-label="First group">
-        <button type="button" class="btn btn-sm btn-outline-secondary" id="all" >ALL</button>
-        <button type="button" class="btn btn-sm btn-outline-secondary" id="app">APPLICATION</button>
-        <button type="button" class="btn btn-sm btn-outline-secondary" id="sticker">STICKER</button>
-        <button type="button" class="btn btn-sm btn-outline-secondary" id="tshirt">T-SHIRT</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary active" >ALL</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary">APPLICATION</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary">STICKER</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary">T-SHIRT</button>
       </div>
     </div>
 
@@ -73,11 +73,11 @@
               </div>
             </div>
             <div class="col-md-4 por-1">
-              <div class="card mb-4 box-shadow shadow-sm rounded" ng-include="'blog/portofolio/portofolio2.html'" style="overflow: hidden;">
+              <div class="card mb-4 box-shadow shadow-sm rounded" ng-include="'blog/portofolio/portofolio2.html'">
               </div>
             </div>
             <div class="col-md-4 por-1">
-              <div class="card mb-4 box-shadow shadow-sm rounded" ng-include="'blog/portofolio/portofolio3.html'" style="overflow: hidden;">
+              <div class="card mb-4 box-shadow shadow-sm rounded" ng-include="'blog/portofolio/portofolio3.html'">
               </div>
             </div>
             <div class="col-md-4 por-1">
@@ -142,12 +142,18 @@
             </div>
           </div>
         </div>
-        <div class="row">
-            <div class="col-12 justify-content-center mx-auto" style="text-align: center;display: block;">
-                <ul id="pagination-demo" class="pagination" style="justify-content: center!important;"></ul>
-            </div>
-          </div>
       </div>
+      <ul class="sync-pagination"></ul>
+    <!-- <div id="content">Page 1</div> -->
+      <!-- <div class="btn-toolbar justify-content-center pb-5" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group mr-2" role="group" aria-label="First group">
+            <button type="button" id="prev" class="btn btn-outline-secondary">PREVIOUS</button>
+            <button type="button" id="page1" class="btn btn-outline-secondary">1</button>
+            <button type="button" id="page2" class="btn btn-outline-secondary">2</button>
+            <button type="button" id="page3" class="btn btn-outline-secondary">3</buttn>
+            <button type="button" id="next" class="btn btn-outline-secondary">NEXT</button>
+          </div>
+        </div> -->
   </main>
   <footer class="bg-dark">
       <div class="container">
@@ -197,7 +203,7 @@
        </div>
       </footer>  
 <script type="text/javascript">
-  $(function () {
+$(function () {
         $('#pagination-demo').twbsPagination({
         totalPages: 3,
         onPageClick: function (evt, page) {
@@ -208,38 +214,37 @@
         }
         });
     });
-   $(document).ready(function(){
+  /* $(document).ready(function(){
     var page = 0;
-      $("#all").click(function(){
-          $("button.btn").removeClass("active");
-          $(".col-md-4").hide(25);
-          $(".col-md-4").fadeIn("slow");
-      });
-      $("#app").click(function(){
+      $("#page1").click(function(){
+        page = 1;
         $("button.btn").removeClass("active");
-        $(".col-md-4").hide(10);
+        $(".col-md-4").hide(50);
         $(this).addClass("active");
-          $(".app-cat").each(function(){
+
+          $(".por-1").each(function(){
             $(this).fadeIn("slow");
           });
       });
-      $("#sticker").click(function(){
+      $("#page2").click(function(){
+        page = 2;
         $("button.btn").removeClass("active");
-        $(".col-md-4").hide(10); 
+        $(".col-md-4").hide(50); 
         $(this).addClass("active");
-          $(".sticker-cat").each(function(){
+          $(".por-2").each(function(){
             $(this).fadeIn("slow");
           });
       });
-      $("#tshirt").click(function(){
+      $("#page3").click(function(){
+        page = 3;
         $("button.btn").removeClass("active");
         $(this).addClass("active");
-        $(".col-md-4").hide(10);
-          $(".tshirt-cat").each(function(){
+        $(".col-md-4").hide(50);
+          $(".por-3").each(function(){
             $(this).fadeIn("slow");
           });
       });
-  }); 
+  }); */
 </script>
 </body>
 </html>

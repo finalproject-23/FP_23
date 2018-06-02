@@ -1,0 +1,40 @@
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.page-link{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.page-link:hover{
+    color: #212529;
+}
+
+.figure-thumb{
+    width:348px;
+    height: 184.86px; /*container-width*/
+    overflow:hidden; /*hide bounds of image */
+    margin:0;   /*reset margin of figure tag*/
+ }
+.figure-thumb a img{
+    display:block; /*remove inline-block spaces*/
+    width:100%; /*make image streatch*/
+ }
