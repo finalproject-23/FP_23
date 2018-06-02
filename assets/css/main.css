@@ -96,7 +96,7 @@ img.logo-hd {
  z-index: 2500;
 }
 .navbar-trans {
- background-color: rgba(0, 0, 0, 0.7);
+ background-color: rgba(0, 0, 0, 1);
  padding: 1.5px;
  min-height: 50px;
  z-index: 2500;
@@ -105,7 +105,7 @@ img.logo-hd {
  margin: 0 5px;
 }
 #myCarousel {
- margin-top: -50px
+ margin-bottom: 0px
 }
 .cont-njobo {
  padding: 0 0;
@@ -129,9 +129,12 @@ img.logo-hd {
 
 /* Carousel base class */
 .carousel {
- margin-bottom: 4rem;
+ margin-bottom: 0;
 }
 /* Since positioning the image, we need to help out the caption */
+.pd-top-15 {
+ padding-top: 13rem
+}
 .carousel-caption {
  bottom: 3rem;
  z-index: 10;
@@ -297,7 +300,7 @@ h1,h2,h3,h4,h5,h6 {
  color: #007bff
 }
 #sponsor {
- margin-top: -50px;
+ margin-top: 0;
 }
 .brdr {
  padding: 10px;
