@@ -22,7 +22,7 @@
   }
 
   div.test {
-  
+    overflow: hidden;
   }
   
   img.test {
@@ -41,3 +41,5 @@
   .sample-show-hide.ng-hide {
     opacity: 0;
   } 
+
+ 
