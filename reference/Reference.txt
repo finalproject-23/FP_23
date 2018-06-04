@@ -47,7 +47,7 @@
   https://hackernoon.com/set-up-ssl-on-github-pages-with-custom-domains-for-free-a576bdf51bc
   https://dash.cloudflare.com/7daa69438fe1d020775b79337fa9f004/artterror23.ga
 
-____________________________________________________________________________________
+______________________________________________________________________________________________________________________________________________
 
 - home
   . header navigasi
