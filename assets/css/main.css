@@ -378,3 +378,8 @@ div.kotakkedua {
  left: -100px;
  height: 0px;
 }
+
+/* Location */
+#location a {
+ cursor: pointer!important
+}
