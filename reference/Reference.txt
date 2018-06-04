@@ -6,10 +6,6 @@
 - api WA Telegram
   https://faq.whatsapp.com/en/android/26000030/
 
-- galeri poto
-  
-- skill
-  
 - contact form ke email
   formspree  => https://formspree.io/
 
