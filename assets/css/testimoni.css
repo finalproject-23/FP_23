@@ -6,7 +6,6 @@ div.header {
 }
 
 h1.header {
-    
     padding-top: 10px;
 }
 
@@ -88,8 +87,7 @@ p.icon1-2 {
     color: blue;
 }
 p.icon1-3 {
-    font-family: 'Alegreya SC';
-    font-size: 18px;
+    font-size: 1rem;
     margin-top: 70px;
     text-align: justify;
 }
@@ -104,10 +102,8 @@ p.icon1-2-2 {
     color: cyan;
 }
 p.icon1-3-3 {
-    font-family: 'Alegreya SC';
-    font-size: 18px;
+    font-size: 1rem;
     margin-top: 70px;
-    
     color: white;
 }
 
