@@ -1,3 +1,10 @@
+# All Reference Used in This Project
+====================================
+
+- base reference
+  features   :  https://taufiqhidayat23.blogspot.co.id/
+  layout     :  https://www.behance.net/gallery/17665373/Marine-Theme-Homepage-v4
+
 - maps
   https://www.w3schools.com/graphics/google_maps_intro.asp
   https://www.youtube.com/watch?v=Zxf1mnP5zcw
