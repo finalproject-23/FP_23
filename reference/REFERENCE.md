@@ -7,7 +7,7 @@ base reference
 maps
  + https://www.w3schools.com/graphics/google_maps_intro.asp
  + https://www.youtube.com/watch?v=Zxf1mnP5zcw
- + api key AIzaSyBSHhSMyxh3XrHskeQN40xbTNt2WMQzW94
+ + api key AIzaSyBSHhSMyxh3X__rHskeQN40xbTNt2WMQzW94
 
 api WA Telegram
  + https://faq.whatsapp.com/en/android/26000030/
@@ -55,7 +55,7 @@ Custom domain Github pages https
 
 ______________________________________________________________________________________________________________________________________________
 
-- home
+### home
   . header navigasi
   . navigasi
   . header full
@@ -75,29 +75,29 @@ ________________________________________________________________________________
     . tombol readmore => contact
   - navigasi bawah
 
-- about
+### about
   . foto + diskripsi perushaan
 
-- contact
+### contact
   . maps
   . telepon
   . socmed
 
-- fasilitas
+### fasilitas
   . foto fasilitas & diskripsi
 
-- portofolio video cuplikan
+### portofolio video cuplikan
  - portofolio full page
    . gambar + diskripsi
  - selengkapnya => daftar portofolio one page
    . grid semua portofolio
 
-- blog cuplikan postingan
+### blog cuplikan postingan
  - postingan full halaman
    . gambar + diskripsi
  - selengkapnya => daftar postingan one page grid
    . list semua postingan
 
-- cuplikan testimoni => slideshow 3
+### cuplikan testimoni => slideshow 3
  - selengkapnya => row 1 column
    . satu kolom menurun banyak
