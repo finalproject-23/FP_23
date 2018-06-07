@@ -56,6 +56,8 @@ Custom domain Github pages https
 ______________________________________________________________________________________________________________________________________________
 
 ### home
+
+
   . header navigasi
   . navigasi
   . header full
@@ -65,13 +67,19 @@ ________________________________________________________________________________
     . grid 6
     . read more => kumpulan tampilan grid
   - blog
+
+
     . cuplikan gambar
     . cuplikan tulisan
     . read more => kumpulan postingan (list degnan image)
   - testimonial
+
+
     . slideshow 3
     . read more => kumpulan testimoni list 1 kolom
   - contact us 
+
+  
     . tombol readmore => contact
   - navigasi bawah
 
