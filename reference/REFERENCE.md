@@ -7,7 +7,7 @@ base reference
 maps
  + https://www.w3schools.com/graphics/google_maps_intro.asp
  + https://www.youtube.com/watch?v=Zxf1mnP5zcw
- + api key AIzaSyBSHhSMyxh3X__rHskeQN40xbTNt2WMQzW94
+ + api key AIzaSyBSHhS-Myxh3XrHskeQN40-xbTNt2WMQzW94
 
 api WA Telegram
  + https://faq.whatsapp.com/en/android/26000030/
