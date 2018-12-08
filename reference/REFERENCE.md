@@ -30,7 +30,7 @@ hover image
 
 github.io
  + https://pages.github.com/
- + https://taufiqhdyt.io/FP_23/
+ + https://taufiqhdyt.github.io/FP_23/
 
 recaptcha
  + https://www.google.com/recaptcha/admin#site/341564269?setup
