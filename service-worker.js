@@ -281,4 +281,4 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/^https:\/\/artterror23\.ga\//, toolbox.networkFirst, {});
+toolbox.router.get(/^https:\/\/io\.taufiqhdyt\.com\\/FP_23\//, toolbox.networkFirst, {});
