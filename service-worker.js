@@ -37,223 +37,227 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["about.html","2943fecb572286634ebe9c3911053d5a"],["assets/css/bootstrap.min.css","e59aa29ac4a3d18d092f6ba813ae1997"],["assets/css/fa-brands.css","d3942899ca89fabf32eb732e69c24ce0"],["assets/css/fa-brands.min.css","a52c0a6b27c784cf6024ba4c127a52f7"],["assets/css/fa-regular.css","350952f612cbd1671d3d360346a58a2f"],["assets/css/fa-regular.min.css","910612c54fe0d9da29cd9ef7bfeceaca"],["assets/css/fa-solid.css","f55363663db5c83687384e2366445d37"],["assets/css/fa-solid.min.css","3d5f4e52757af6a2bc2b91fad4007d46"],["assets/css/fontawesome-all.css","be72be62d9962a76d84cdbfbb04160e5"],["assets/css/fontawesome-all.min.css","526fe1e1a6f12b2ac2556ac6c0ee3af3"],["assets/css/fontawesome.css","94dd8dc4666d24448ad5ada48f7e6e6c"],["assets/css/fontawesome.min.css","be0bc83d01dea4d453a9e3986c480182"],["assets/css/main.css","ee7f017ad43d01a23ef84cd3adcea15f"],["assets/css/pagination.css","d4d1ea4a395f3343827678c5835d7d2e"],["assets/css/portofolio.css","3503b2d955b88edccd8db47a28cc1453"],["assets/css/post-1-page.css","a347de165ea75793f2537a8ad5b4e894"],["assets/css/post-list.css","451c495f43b66fa3831b6602bf96ade9"],["assets/css/testimoni.css","74e1a6d00da91f2247fe23249098d715"],["assets/fonts/Quicksand/Quicksand-Bold.ttf","0c04462696ac0fd3e85e75415b483fdb"],["assets/fonts/Quicksand/Quicksand-Light.ttf","c5f954788f341b22e1974433bb972ac1"],["assets/fonts/Quicksand/Quicksand-Medium.ttf","0c64233241ead44bffbec54eb9d1d164"],["assets/fonts/Quicksand/Quicksand-Regular.ttf","f87b9b4f34bdbf75b5c0cf3a5a137508"],["assets/img/16_11_0058-thumb.jpg","bbe4e248593214d7dde26d8d76c68923"],["assets/img/16_11_0058.jpg","685c8fc8ea8a151793cd0ecdc7ad8ddf"],["assets/img/AR23_logo.svg","7b1435cf34d3197386ad58dd03829b57"],["assets/img/Inori Minase (rem).jpg","60b963162eae4afc96f565bb63455a65"],["assets/img/Inori Minase-alt.jpg","96d43a22334d2c4f9ebdd56ee3aa9028"],["assets/img/b-001-300x300.jpg","b19fcc5f2f0fd057293944a673f67f72"],["assets/img/b-005-300x300.jpg","c1b59faf9da2281fb77111b92689504a"],["assets/img/b-008-300x300.jpg","0a3c42501896000b9cf947500ed486db"],["assets/img/b-009-300x300.jpg","9b124ddc6d59f651ed4fc039fb65a86f"],["assets/img/discussion.jpg","89283b73d64ee5f06895577b3607ad2c"],["assets/img/h6-p4-min.jpg","f00a8703d3b22e27e04874709530565a"],["assets/img/head-a.png","bf384e84d3b925bcdf8d0de2b91bee77"],["assets/img/head-b.png","c43cf0c053492183af08cfa769c5fe4a"],["assets/img/head-c.png","a8c3946980e6bfd32715421f125708e2"],["assets/img/header1-min.png","c67a09cc9c9ccb02623f2b2289f65679"],["assets/img/icons/fav128.png","90bde952eadf9edd6a1b1c473e4ec297"],["assets/img/icons/fav144.png","f36c3555eedcae82faa7589dc265f972"],["assets/img/icons/fav152.png","f4212c10f4286081dfc81409b90f7aac"],["assets/img/icons/fav192.png","45078c789904c0218570e2d815632cc4"],["assets/img/icons/fav384.png","b5d134f2b421aef3d2a3d24aa53de55c"],["assets/img/icons/fav512.png","b15ad85c4fd3aef4c26cc478bd4caf9f"],["assets/img/icons/fav72.png","b7ea2b182be7f8a562e454cf7d2e06ad"],["assets/img/icons/fav96.png","3dd90a270240886699f2c52f8a92c495"],["assets/img/icons/favicon-outline72.png","e5cddd4f1e418f85c5b3689f74561b0e"],["assets/img/icons/favicon128.png","dfe6737d7b4db02209d51aea42b933fd"],["assets/img/icons/favicon144.png","ad95644f918743a523b04bdf73960a7c"],["assets/img/icons/favicon152.png","e6c5ca39fbb2dd444859c1f7a7201fac"],["assets/img/icons/favicon192.png","5e089a44a802514aafc88d8a0783a570"],["assets/img/icons/favicon384.png","60ce6b002a4905d4deadc0da3907f456"],["assets/img/icons/favicon512.png","172cd1dae3bb58449a0799cbbeecbc61"],["assets/img/icons/favicon72.png","5150f634a3ddf0d3979380dcabe4fc00"],["assets/img/icons/favicon96.png","777e18c114b63199d1cd512b9612a8fb"],["assets/img/icons/faviconsvg.svg","d0915105e5d96357b1d2d92586802be0"],["assets/img/icons/fplogodark128.png","168c5cfe6a7fc8e47d7b48b1ba31545f"],["assets/img/icons/fplogodark144.png","0ce4bba7e2153f10f5b49e01d0a8be9e"],["assets/img/icons/fplogodark152.png","f7990b1af7639a74b7f7444c0a1c47fe"],["assets/img/icons/fplogodark192.png","ae1b55e772992e0306722de1a6312fec"],["assets/img/icons/fplogodark384.png","3e6df9a80d6e4a5a5ef95c0f9a7b4705"],["assets/img/icons/fplogodark512.png","f42608d0eedb7b022d6bd2539aa9db1e"],["assets/img/icons/fplogodark72.png","c49782ef658b597b6a4998732fdcefdc"],["assets/img/icons/fplogodark96.png","2cdbf5f499b49741eb0d23affc25b8c4"],["assets/img/icons/list.png","01f7f668fa3d4a0f5d51d0f0d53925f5"],["assets/img/icons/logofp128.png","41f2b478c3a5dbca7344fb527e765ac3"],["assets/img/icons/logofp144.png","a7007ab97e281743f73c4a7bca4e0a55"],["assets/img/icons/logofp152.png","361cd37abab008785212d6a38594576c"],["assets/img/icons/logofp192.png","6c4c090940f08fd5b4194e8a69a2358d"],["assets/img/icons/logofp384.png","80d9ec6d47d0f289053dfcd224149cc1"],["assets/img/icons/logofp512.png","4faaae477e722f92844dd54c5e0f438e"],["assets/img/icons/logofp72.png","1bafb4d4ea028c5aee7b91caf843d59c"],["assets/img/icons/logofp96.png","5d6749fec3c09e7b955f801b29a61cdf"],["assets/img/icons/logofpsvg.svg","cc4f57bbe14cca9f110a3a8009710da4"],["assets/img/icontest1.jpg","d87f552daa5102aa50986f49f455f56c"],["assets/img/icontest2-thumb.jpg","3d0b01ac8875adeb76ec149085818271"],["assets/img/icontest2.jpg","e206af86defb9ad4a0dd089bf5d19d31"],["assets/img/office.jpg","838be82c8a1f7135394655bc56c9ea6a"],["assets/img/topik_1_.png","299981883879f55f5ec89640b30398b6"],["assets/pictures/0_pemH-XsqF5BFiiVm.jpg","e0d29773ec4b11bd115e6378a21e34ff"],["assets/pictures/0a0ceda4bda18e664ffac1a8fa86a7d1.jpg","b0b954ba6a75c8571e3f48442c1d7cd6"],["assets/pictures/1383951646498.png","fd77c11c8ae9ad753b4b9b24212889e7"],["assets/pictures/58c91e077fce8_thumb900.jpg","3b0bf53812e10c5954411db28ef1d43e"],["assets/pictures/adiputro.png","7f32a07443dc32aa27ad78250b19573d"],["assets/pictures/b-001-300x300.jpg","b19fcc5f2f0fd057293944a673f67f72"],["assets/pictures/b-005-300x300.jpg","c1b59faf9da2281fb77111b92689504a"],["assets/pictures/b-008-300x300.jpg","0a3c42501896000b9cf947500ed486db"],["assets/pictures/b-009-300x300.jpg","9b124ddc6d59f651ed4fc039fb65a86f"],["assets/pictures/freee-ui-mockup-psd-1000x681.jpg","e74f67fbdd3c0ecf409f3d4e608b4777"],["assets/pictures/logo indomart.png","129adcd9e7241ff14bed977990ac0d7e"],["assets/pictures/logo-bus-pariwisata-blue-star.png","ee3a9d6b8eb929610f44cbcaeb7b5c68"],["assets/pictures/people-office-group-team.jpg","5f20a084727fc71777ce603a29f7bf88"],["assets/pictures/portofolio/Perspective-Product-App-Screen.jpg","2cd8eba3f390d98594f818517d5946e0"],["assets/pictures/portofolio/Yardsale-Shirt-angled-min.jpg","4e6e83bc1007949f732cc3397447b7f2"],["assets/pictures/portofolio/day-night3.png","838415965cb503b65b5ccf2c180d884f"],["assets/pictures/portofolio/doublenaut_newshirts-min.jpg","a047b8053f4a98a98c90b586d709e5ce"],["assets/pictures/portofolio/doublenaut_tshirts-min.jpg","282df74b206d981abd0dcf6d6a21c389"],["assets/pictures/portofolio/hello-spaceman-sticerk.png","0303d46528e5b6284b72c4aaeb742cf6"],["assets/pictures/portofolio/img_0006-min.jpg","1f4b111725f21128354d3aa981536642"],["assets/pictures/portofolio/shirt_large.png","81cb694166c0974da455ccade0a4cce2"],["assets/pictures/portofolio/star-wars-stickers.png","6738dfffe6c34f4c9f0af7104c638bba"],["assets/pictures/portofolio/tomatte_dribbble.png","cf0fdd9c8460cc3498af9a6e5b671153"],["assets/pictures/suasana-di-kantor-google_20150616_111950.jpg","edb1735e0c473e7e5261789019d2e1ba"],["assets/pictures/traditional-home-gym.jpg","6abf1967f61825e3c9a98cd4d08241d4"],["assets/pictures/unilerver_blog.png","7f94cc38f9962863c2c8bda950efb520"],["assets/pictures/viewImage.jpg","235760750680de65024ec1e4d2c21971"],["assets/webfonts/fa-brands-400.eot","748ab466bee11e0b2132916def799916"],["assets/webfonts/fa-brands-400.svg","5c2d83d411cb3a620642748047b0a78f"],["assets/webfonts/fa-brands-400.ttf","7febe26eeb4dd8e3a3c614a144d399fb"],["assets/webfonts/fa-brands-400.woff","2248542e1bbbd548a157e3e6ced054fc"],["assets/webfonts/fa-brands-400.woff2","3654744dc6d6c37c9b3582b57622df5e"],["assets/webfonts/fa-regular-400.eot","b58f468f84168d61e0ebc1e1f423587c"],["assets/webfonts/fa-regular-400.svg","20af3d0e89d84cfca261212bfea3cb28"],["assets/webfonts/fa-regular-400.ttf","54f142e03adc6da499c2af4f54ab76fd"],["assets/webfonts/fa-regular-400.woff","f3dd4f397fbc5aaf831b6b0ba112d75c"],["assets/webfonts/fa-regular-400.woff2","33f727ccde4b05c0ed143c5cd78cda0c"],["assets/webfonts/fa-solid-900.eot","035a137af03db6f1af76a589da5bb865"],["assets/webfonts/fa-solid-900.svg","84de948308071ac57e45479e1508e022"],["assets/webfonts/fa-solid-900.ttf","b6a14bb88dbc580e45034af297c8f605"],["assets/webfonts/fa-solid-900.woff","6661d6b3521b4c480ba759e4b9e480c1"],["assets/webfonts/fa-solid-900.woff2","8a8c0474283e0d9ef41743e5e486bf05"],["blog/portofolio/portofolio1.html","8239252d78c74eceb48721b7ede478d9"],["blog/portofolio/portofolio2.html","0604336f12277a28f6390d0c0da987a6"],["blog/portofolio/portofolio3.html","2c45748e82217f76cee0ead4c9608396"],["blog/portofolio/portofolio4.html","1125e0948fdeca828673761d34f8f0d5"],["blog/portofolio/portofolio5.html","106c6f28fda675d52a63fe70ad5f3c93"],["blog/portofolio/portofolio6.html","8d82d47646c30176249eb03aa0a32156"],["blog/service/adv.html","1510ff79c67d6436a540c94b08d526ce"],["blog/service/ecommerce.html","7c4c014d2190740447c3af93db1682d3"],["blog/service/ui.html","80912382f9b07f00df17edbb8824ffed"],["blog/service/video.html","9229d50928c9d993f85afe6e9dfbda71"],["contact-us.html","c2fb2a1214c4982494aedfc65e0f4244"],["faq.html","3308fd98afbca05c45f4a053b3c28957"],["index.html","5b10dbcbf85cae7092b520e80ca91318"],["portofolio-post.html","97c3f4554c062c8f2aaee33b3264da76"],["portofolio.html","6e7c0d574edab3d433269d6292116685"],["post-1-page.html","24784e8f9cb88e220c34f9cc54ff3686"],["post-list.html","e3d77e4a334e8d76dfe690964086ee90"],["service.html","02567a7069501f3c5acb7effdbcdfcbf"],["testimoni.html","4c2e32d9b6e3f62157f85b99dfabc5f8"]];
+var precacheConfig = [["about.html","89c0787404bb71219b4c534e73033519"],["assets/css/bootstrap.min.css","e59aa29ac4a3d18d092f6ba813ae1997"],["assets/css/fa-brands.css","d3942899ca89fabf32eb732e69c24ce0"],["assets/css/fa-brands.min.css","a52c0a6b27c784cf6024ba4c127a52f7"],["assets/css/fa-regular.css","350952f612cbd1671d3d360346a58a2f"],["assets/css/fa-regular.min.css","910612c54fe0d9da29cd9ef7bfeceaca"],["assets/css/fa-solid.css","f55363663db5c83687384e2366445d37"],["assets/css/fa-solid.min.css","3d5f4e52757af6a2bc2b91fad4007d46"],["assets/css/fontawesome-all.css","be72be62d9962a76d84cdbfbb04160e5"],["assets/css/fontawesome-all.min.css","526fe1e1a6f12b2ac2556ac6c0ee3af3"],["assets/css/fontawesome.css","94dd8dc4666d24448ad5ada48f7e6e6c"],["assets/css/fontawesome.min.css","be0bc83d01dea4d453a9e3986c480182"],["assets/css/main.css","ee7f017ad43d01a23ef84cd3adcea15f"],["assets/css/pagination.css","d4d1ea4a395f3343827678c5835d7d2e"],["assets/css/portofolio.css","3503b2d955b88edccd8db47a28cc1453"],["assets/css/post-1-page.css","a347de165ea75793f2537a8ad5b4e894"],["assets/css/post-list.css","451c495f43b66fa3831b6602bf96ade9"],["assets/css/testimoni.css","74e1a6d00da91f2247fe23249098d715"],["assets/fonts/Quicksand/Quicksand-Bold.ttf","0c04462696ac0fd3e85e75415b483fdb"],["assets/fonts/Quicksand/Quicksand-Light.ttf","c5f954788f341b22e1974433bb972ac1"],["assets/fonts/Quicksand/Quicksand-Medium.ttf","0c64233241ead44bffbec54eb9d1d164"],["assets/fonts/Quicksand/Quicksand-Regular.ttf","f87b9b4f34bdbf75b5c0cf3a5a137508"],["assets/img/16_11_0058-thumb.jpg","bbe4e248593214d7dde26d8d76c68923"],["assets/img/16_11_0058.jpg","685c8fc8ea8a151793cd0ecdc7ad8ddf"],["assets/img/AR23_logo.svg","7b1435cf34d3197386ad58dd03829b57"],["assets/img/Inori Minase (rem).jpg","60b963162eae4afc96f565bb63455a65"],["assets/img/Inori Minase-alt.jpg","96d43a22334d2c4f9ebdd56ee3aa9028"],["assets/img/b-001-300x300.jpg","b19fcc5f2f0fd057293944a673f67f72"],["assets/img/b-005-300x300.jpg","c1b59faf9da2281fb77111b92689504a"],["assets/img/b-008-300x300.jpg","0a3c42501896000b9cf947500ed486db"],["assets/img/b-009-300x300.jpg","9b124ddc6d59f651ed4fc039fb65a86f"],["assets/img/discussion.jpg","89283b73d64ee5f06895577b3607ad2c"],["assets/img/h6-p4-min.jpg","f00a8703d3b22e27e04874709530565a"],["assets/img/head-a.png","bf384e84d3b925bcdf8d0de2b91bee77"],["assets/img/head-b.png","c43cf0c053492183af08cfa769c5fe4a"],["assets/img/head-c.png","a8c3946980e6bfd32715421f125708e2"],["assets/img/header1-min.png","c67a09cc9c9ccb02623f2b2289f65679"],["assets/img/icons/fav128.png","90bde952eadf9edd6a1b1c473e4ec297"],["assets/img/icons/fav144.png","f36c3555eedcae82faa7589dc265f972"],["assets/img/icons/fav152.png","f4212c10f4286081dfc81409b90f7aac"],["assets/img/icons/fav192.png","45078c789904c0218570e2d815632cc4"],["assets/img/icons/fav384.png","b5d134f2b421aef3d2a3d24aa53de55c"],["assets/img/icons/fav512.png","b15ad85c4fd3aef4c26cc478bd4caf9f"],["assets/img/icons/fav72.png","b7ea2b182be7f8a562e454cf7d2e06ad"],["assets/img/icons/fav96.png","3dd90a270240886699f2c52f8a92c495"],["assets/img/icons/favicon-outline72.png","e5cddd4f1e418f85c5b3689f74561b0e"],["assets/img/icons/favicon128.png","dfe6737d7b4db02209d51aea42b933fd"],["assets/img/icons/favicon144.png","ad95644f918743a523b04bdf73960a7c"],["assets/img/icons/favicon152.png","e6c5ca39fbb2dd444859c1f7a7201fac"],["assets/img/icons/favicon192.png","5e089a44a802514aafc88d8a0783a570"],["assets/img/icons/favicon384.png","60ce6b002a4905d4deadc0da3907f456"],["assets/img/icons/favicon512.png","172cd1dae3bb58449a0799cbbeecbc61"],["assets/img/icons/favicon72.png","5150f634a3ddf0d3979380dcabe4fc00"],["assets/img/icons/favicon96.png","777e18c114b63199d1cd512b9612a8fb"],["assets/img/icons/faviconsvg.svg","d0915105e5d96357b1d2d92586802be0"],["assets/img/icons/fplogodark128.png","168c5cfe6a7fc8e47d7b48b1ba31545f"],["assets/img/icons/fplogodark144.png","0ce4bba7e2153f10f5b49e01d0a8be9e"],["assets/img/icons/fplogodark152.png","f7990b1af7639a74b7f7444c0a1c47fe"],["assets/img/icons/fplogodark192.png","ae1b55e772992e0306722de1a6312fec"],["assets/img/icons/fplogodark384.png","3e6df9a80d6e4a5a5ef95c0f9a7b4705"],["assets/img/icons/fplogodark512.png","f42608d0eedb7b022d6bd2539aa9db1e"],["assets/img/icons/fplogodark72.png","c49782ef658b597b6a4998732fdcefdc"],["assets/img/icons/fplogodark96.png","2cdbf5f499b49741eb0d23affc25b8c4"],["assets/img/icons/list.png","01f7f668fa3d4a0f5d51d0f0d53925f5"],["assets/img/icons/logofp128.png","41f2b478c3a5dbca7344fb527e765ac3"],["assets/img/icons/logofp144.png","a7007ab97e281743f73c4a7bca4e0a55"],["assets/img/icons/logofp152.png","361cd37abab008785212d6a38594576c"],["assets/img/icons/logofp192.png","6c4c090940f08fd5b4194e8a69a2358d"],["assets/img/icons/logofp384.png","80d9ec6d47d0f289053dfcd224149cc1"],["assets/img/icons/logofp512.png","4faaae477e722f92844dd54c5e0f438e"],["assets/img/icons/logofp72.png","1bafb4d4ea028c5aee7b91caf843d59c"],["assets/img/icons/logofp96.png","5d6749fec3c09e7b955f801b29a61cdf"],["assets/img/icons/logofpsvg.svg","cc4f57bbe14cca9f110a3a8009710da4"],["assets/img/icontest1.jpg","d87f552daa5102aa50986f49f455f56c"],["assets/img/icontest2-thumb.jpg","3d0b01ac8875adeb76ec149085818271"],["assets/img/icontest2.jpg","e206af86defb9ad4a0dd089bf5d19d31"],["assets/img/office.jpg","838be82c8a1f7135394655bc56c9ea6a"],["assets/img/topik_1_.png","299981883879f55f5ec89640b30398b6"],["assets/pictures/0_pemH-XsqF5BFiiVm.jpg","e0d29773ec4b11bd115e6378a21e34ff"],["assets/pictures/0a0ceda4bda18e664ffac1a8fa86a7d1.jpg","b0b954ba6a75c8571e3f48442c1d7cd6"],["assets/pictures/1383951646498.png","fd77c11c8ae9ad753b4b9b24212889e7"],["assets/pictures/58c91e077fce8_thumb900.jpg","3b0bf53812e10c5954411db28ef1d43e"],["assets/pictures/adiputro.png","7f32a07443dc32aa27ad78250b19573d"],["assets/pictures/b-001-300x300.jpg","b19fcc5f2f0fd057293944a673f67f72"],["assets/pictures/b-005-300x300.jpg","c1b59faf9da2281fb77111b92689504a"],["assets/pictures/b-008-300x300.jpg","0a3c42501896000b9cf947500ed486db"],["assets/pictures/b-009-300x300.jpg","9b124ddc6d59f651ed4fc039fb65a86f"],["assets/pictures/freee-ui-mockup-psd-1000x681.jpg","e74f67fbdd3c0ecf409f3d4e608b4777"],["assets/pictures/logo indomart.png","129adcd9e7241ff14bed977990ac0d7e"],["assets/pictures/logo-bus-pariwisata-blue-star.png","ee3a9d6b8eb929610f44cbcaeb7b5c68"],["assets/pictures/people-office-group-team.jpg","5f20a084727fc71777ce603a29f7bf88"],["assets/pictures/portofolio/Perspective-Product-App-Screen.jpg","2cd8eba3f390d98594f818517d5946e0"],["assets/pictures/portofolio/Yardsale-Shirt-angled-min.jpg","4e6e83bc1007949f732cc3397447b7f2"],["assets/pictures/portofolio/day-night3.png","838415965cb503b65b5ccf2c180d884f"],["assets/pictures/portofolio/doublenaut_newshirts-min.jpg","a047b8053f4a98a98c90b586d709e5ce"],["assets/pictures/portofolio/doublenaut_tshirts-min.jpg","282df74b206d981abd0dcf6d6a21c389"],["assets/pictures/portofolio/hello-spaceman-sticerk.png","0303d46528e5b6284b72c4aaeb742cf6"],["assets/pictures/portofolio/img_0006-min.jpg","1f4b111725f21128354d3aa981536642"],["assets/pictures/portofolio/shirt_large.png","81cb694166c0974da455ccade0a4cce2"],["assets/pictures/portofolio/star-wars-stickers.png","6738dfffe6c34f4c9f0af7104c638bba"],["assets/pictures/portofolio/tomatte_dribbble.png","cf0fdd9c8460cc3498af9a6e5b671153"],["assets/pictures/suasana-di-kantor-google_20150616_111950.jpg","edb1735e0c473e7e5261789019d2e1ba"],["assets/pictures/traditional-home-gym.jpg","6abf1967f61825e3c9a98cd4d08241d4"],["assets/pictures/unilerver_blog.png","7f94cc38f9962863c2c8bda950efb520"],["assets/pictures/viewImage.jpg","235760750680de65024ec1e4d2c21971"],["assets/webfonts/fa-brands-400.eot","748ab466bee11e0b2132916def799916"],["assets/webfonts/fa-brands-400.svg","5c2d83d411cb3a620642748047b0a78f"],["assets/webfonts/fa-brands-400.ttf","7febe26eeb4dd8e3a3c614a144d399fb"],["assets/webfonts/fa-brands-400.woff","2248542e1bbbd548a157e3e6ced054fc"],["assets/webfonts/fa-brands-400.woff2","3654744dc6d6c37c9b3582b57622df5e"],["assets/webfonts/fa-regular-400.eot","b58f468f84168d61e0ebc1e1f423587c"],["assets/webfonts/fa-regular-400.svg","20af3d0e89d84cfca261212bfea3cb28"],["assets/webfonts/fa-regular-400.ttf","54f142e03adc6da499c2af4f54ab76fd"],["assets/webfonts/fa-regular-400.woff","f3dd4f397fbc5aaf831b6b0ba112d75c"],["assets/webfonts/fa-regular-400.woff2","33f727ccde4b05c0ed143c5cd78cda0c"],["assets/webfonts/fa-solid-900.eot","035a137af03db6f1af76a589da5bb865"],["assets/webfonts/fa-solid-900.svg","84de948308071ac57e45479e1508e022"],["assets/webfonts/fa-solid-900.ttf","b6a14bb88dbc580e45034af297c8f605"],["assets/webfonts/fa-solid-900.woff","6661d6b3521b4c480ba759e4b9e480c1"],["assets/webfonts/fa-solid-900.woff2","8a8c0474283e0d9ef41743e5e486bf05"],["blog/portofolio/portofolio1.html","8239252d78c74eceb48721b7ede478d9"],["blog/portofolio/portofolio2.html","0604336f12277a28f6390d0c0da987a6"],["blog/portofolio/portofolio3.html","2c45748e82217f76cee0ead4c9608396"],["blog/portofolio/portofolio4.html","1125e0948fdeca828673761d34f8f0d5"],["blog/portofolio/portofolio5.html","106c6f28fda675d52a63fe70ad5f3c93"],["blog/portofolio/portofolio6.html","8d82d47646c30176249eb03aa0a32156"],["blog/service/adv.html","9723329c1feb4ac194774abdd8cc75bd"],["blog/service/ecommerce.html","79363d43e1db638fb9c44e3c25e0f26a"],["blog/service/ui.html","1884b1f9af96c31851685012bd0463bf"],["blog/service/video.html","1aba09d91e184d42bf3a20254018dcda"],["contact-us.html","20a9ffc91de643b2e14894f5a920ce92"],["faq.html","3cd69f67ed1bf208e4904f9726178208"],["index.html","e4afa61d1c536a6f4518bec09834719e"],["portofolio-post.html","c89c886d0234ddda6dfa8111b3506e50"],["portofolio.html","68c53ff8e77c10ee155b3c9f52abae56"],["post-1-page.html","fb4c2813c35eaba74af9d0ea426e4d19"],["post-list.html","2aa204982fada9a9e25bc9f234a294d3"],["service.html","cc24af4cfc2669949bb638322d09e6c2"],["testimoni.html","e091dbcd73a11d311034ea7f0558fb2f"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
+
 
 var ignoreUrlParametersMatching = [/^utm_/];
 
-var addDirectoryIndex = function (originalUrl, index) {
-  var url = new URL(originalUrl);
-  if (url.pathname.slice(-1) === '/') {
-   url.pathname += index;
-  }
-  return url.toString();
- };
 
-var cleanResponse = function (originalResponse) {
-  // If this is not a redirected response, then we don't have to do anything.
-  if (!originalResponse.redirected) {
-   return Promise.resolve(originalResponse);
-  }
 
-  // Firefox 50 and below doesn't support the Response.body stream, so we may
-  // need to read the entire body to memory as a Blob.
-  var bodyPromise = 'body' in originalResponse ?
-   Promise.resolve(originalResponse.body) :
-   originalResponse.blob();
+var addDirectoryIndex = function(originalUrl, index) {
+    var url = new URL(originalUrl);
+    if (url.pathname.slice(-1) === '/') {
+      url.pathname += index;
+    }
+    return url.toString();
+  };
 
-  return bodyPromise.then(function(body) {
-   // new Response() is happy when passed either a stream or a Blob.
-   return new Response(body, {
-    headers: originalResponse.headers,
-    status: originalResponse.status,
-    statusText: originalResponse.statusText
-   });
-  });
- };
+var cleanResponse = function(originalResponse) {
+    // If this is not a redirected response, then we don't have to do anything.
+    if (!originalResponse.redirected) {
+      return Promise.resolve(originalResponse);
+    }
 
-var createCacheKey = function (originalUrl, paramName, paramValue, dontCacheBustUrlsMatching) {
-  // Create a new URL object to avoid modifying originalUrl.
-  var url = new URL(originalUrl);
+    // Firefox 50 and below doesn't support the Response.body stream, so we may
+    // need to read the entire body to memory as a Blob.
+    var bodyPromise = 'body' in originalResponse ?
+      Promise.resolve(originalResponse.body) :
+      originalResponse.blob();
 
-  // If dontCacheBustUrlsMatching is not set, or if we don't have a match,
-  // then add in the extra cache-busting URL parameter.
-  if (!dontCacheBustUrlsMatching ||
-    !(url.pathname.match(dontCacheBustUrlsMatching))) {
-   url.search += (url.search ? '&' : '') +
-    encodeURIComponent(paramName) + '=' + encodeURIComponent(paramValue);
-  }
-
-  return url.toString();
- };
-
-var isPathWhitelisted = function (whitelist, absoluteUrlString) {
-  // If the whitelist is empty, then consider all URLs to be whitelisted.
-  if (whitelist.length === 0) {
-   return true;
-  }
-
-  // Otherwise compare each path regex to the path of the URL passed in.
-  var path = (new URL(absoluteUrlString)).pathname;
-  return whitelist.some(function(whitelistedPathRegex) {
-   return path.match(whitelistedPathRegex);
-  });
- };
-
-var stripIgnoredUrlParameters = function (originalUrl,
-  ignoreUrlParametersMatching) {
-  var url = new URL(originalUrl);
-  // Remove the hash; see https://github.com/GoogleChrome/sw-precache/issues/290
-  url.hash = '';
-
-  url.search = url.search.slice(1) // Exclude initial '?'
-   .split('&') // Split into an array of 'key=value' strings
-   .map(function(kv) {
-    return kv.split('='); // Split each 'key=value' string into a [key, value] array
-   })
-   .filter(function(kv) {
-    return ignoreUrlParametersMatching.every(function(ignoredRegex) {
-     return !ignoredRegex.test(kv[0]); // Return true iff the key doesn't match any of the regexes.
+    return bodyPromise.then(function(body) {
+      // new Response() is happy when passed either a stream or a Blob.
+      return new Response(body, {
+        headers: originalResponse.headers,
+        status: originalResponse.status,
+        statusText: originalResponse.statusText
+      });
     });
-   })
-   .map(function(kv) {
-    return kv.join('='); // Join each [key, value] array into a 'key=value' string
-   })
-   .join('&'); // Join the array of 'key=value' strings into a string with '&' in between each
+  };
 
-  return url.toString();
- };
+var createCacheKey = function(originalUrl, paramName, paramValue,
+                           dontCacheBustUrlsMatching) {
+    // Create a new URL object to avoid modifying originalUrl.
+    var url = new URL(originalUrl);
+
+    // If dontCacheBustUrlsMatching is not set, or if we don't have a match,
+    // then add in the extra cache-busting URL parameter.
+    if (!dontCacheBustUrlsMatching ||
+        !(url.pathname.match(dontCacheBustUrlsMatching))) {
+      url.search += (url.search ? '&' : '') +
+        encodeURIComponent(paramName) + '=' + encodeURIComponent(paramValue);
+    }
+
+    return url.toString();
+  };
+
+var isPathWhitelisted = function(whitelist, absoluteUrlString) {
+    // If the whitelist is empty, then consider all URLs to be whitelisted.
+    if (whitelist.length === 0) {
+      return true;
+    }
+
+    // Otherwise compare each path regex to the path of the URL passed in.
+    var path = (new URL(absoluteUrlString)).pathname;
+    return whitelist.some(function(whitelistedPathRegex) {
+      return path.match(whitelistedPathRegex);
+    });
+  };
+
+var stripIgnoredUrlParameters = function(originalUrl,
+    ignoreUrlParametersMatching) {
+    var url = new URL(originalUrl);
+    // Remove the hash; see https://github.com/GoogleChrome/sw-precache/issues/290
+    url.hash = '';
+
+    url.search = url.search.slice(1) // Exclude initial '?'
+      .split('&') // Split into an array of 'key=value' strings
+      .map(function(kv) {
+        return kv.split('='); // Split each 'key=value' string into a [key, value] array
+      })
+      .filter(function(kv) {
+        return ignoreUrlParametersMatching.every(function(ignoredRegex) {
+          return !ignoredRegex.test(kv[0]); // Return true iff the key doesn't match any of the regexes.
+        });
+      })
+      .map(function(kv) {
+        return kv.join('='); // Join each [key, value] array into a 'key=value' string
+      })
+      .join('&'); // Join the array of 'key=value' strings into a string with '&' in between each
+
+    return url.toString();
+  };
 
 
 var hashParamName = '_sw-precache';
 var urlsToCacheKeys = new Map(
- precacheConfig.map(function(item) {
-  var relativeUrl = item[0];
-  var hash = item[1];
-  var absoluteUrl = new URL(relativeUrl, self.location);
-  var cacheKey = createCacheKey(absoluteUrl, hashParamName, hash, false);
-  return [absoluteUrl.toString(), cacheKey];
- })
+  precacheConfig.map(function(item) {
+    var relativeUrl = item[0];
+    var hash = item[1];
+    var absoluteUrl = new URL(relativeUrl, self.location);
+    var cacheKey = createCacheKey(absoluteUrl, hashParamName, hash, false);
+    return [absoluteUrl.toString(), cacheKey];
+  })
 );
 
 function setOfCachedUrls(cache) {
- return cache.keys().then(function(requests) {
-  return requests.map(function(request) {
-   return request.url;
+  return cache.keys().then(function(requests) {
+    return requests.map(function(request) {
+      return request.url;
+    });
+  }).then(function(urls) {
+    return new Set(urls);
   });
- }).then(function(urls) {
-  return new Set(urls);
- });
 }
 
 self.addEventListener('install', function(event) {
- event.waitUntil(
-  caches.open(cacheName).then(function(cache) {
-   return setOfCachedUrls(cache).then(function(cachedUrls) {
-    return Promise.all(
-     Array.from(urlsToCacheKeys.values()).map(function(cacheKey) {
-      // If we don't have a key matching url in the cache already, add it.
-      if (!cachedUrls.has(cacheKey)) {
-       var request = new Request(cacheKey, {credentials: 'same-origin'});
-       return fetch(request).then(function(response) {
-        // Bail out of installation unless we get back a 200 OK for
-        // every request.
-        if (!response.ok) {
-         throw new Error('Request for ' + cacheKey + ' returned a ' +
-          'response with status ' + response.status);
-        }
+  event.waitUntil(
+    caches.open(cacheName).then(function(cache) {
+      return setOfCachedUrls(cache).then(function(cachedUrls) {
+        return Promise.all(
+          Array.from(urlsToCacheKeys.values()).map(function(cacheKey) {
+            // If we don't have a key matching url in the cache already, add it.
+            if (!cachedUrls.has(cacheKey)) {
+              var request = new Request(cacheKey, {credentials: 'same-origin'});
+              return fetch(request).then(function(response) {
+                // Bail out of installation unless we get back a 200 OK for
+                // every request.
+                if (!response.ok) {
+                  throw new Error('Request for ' + cacheKey + ' returned a ' +
+                    'response with status ' + response.status);
+                }
 
-        return cleanResponse(response).then(function(responseToCache) {
-         return cache.put(cacheKey, responseToCache);
-        });
-       });
-      }
-     })
-    );
-   });
-  }).then(function() {
-   
-   // Force the SW to transition from installing -> active state
-   return self.skipWaiting();
-   
-  })
- );
+                return cleanResponse(response).then(function(responseToCache) {
+                  return cache.put(cacheKey, responseToCache);
+                });
+              });
+            }
+          })
+        );
+      });
+    }).then(function() {
+      
+      // Force the SW to transition from installing -> active state
+      return self.skipWaiting();
+      
+    })
+  );
 });
 
 self.addEventListener('activate', function(event) {
- var setOfExpectedUrls = new Set(urlsToCacheKeys.values());
+  var setOfExpectedUrls = new Set(urlsToCacheKeys.values());
 
- event.waitUntil(
-  caches.open(cacheName).then(function(cache) {
-   return cache.keys().then(function(existingRequests) {
-    return Promise.all(
-     existingRequests.map(function(existingRequest) {
-      if (!setOfExpectedUrls.has(existingRequest.url)) {
-       return cache.delete(existingRequest);
-      }
-     })
-    );
-   });
-  }).then(function() {
-   
-   return self.clients.claim();
-   
-  })
- );
+  event.waitUntil(
+    caches.open(cacheName).then(function(cache) {
+      return cache.keys().then(function(existingRequests) {
+        return Promise.all(
+          existingRequests.map(function(existingRequest) {
+            if (!setOfExpectedUrls.has(existingRequest.url)) {
+              return cache.delete(existingRequest);
+            }
+          })
+        );
+      });
+    }).then(function() {
+      
+      return self.clients.claim();
+      
+    })
+  );
 });
 
 
 self.addEventListener('fetch', function(event) {
- if (event.request.method === 'GET') {
-  // Should we call event.respondWith() inside this fetch event handler?
-  // This needs to be determined synchronously, which will give other fetch
-  // handlers a chance to handle the request if need be.
-  var shouldRespond;
+  if (event.request.method === 'GET') {
+    // Should we call event.respondWith() inside this fetch event handler?
+    // This needs to be determined synchronously, which will give other fetch
+    // handlers a chance to handle the request if need be.
+    var shouldRespond;
 
-  // First, remove all the ignored parameters and hash fragment, and see if we
-  // have that URL in our cache. If so, great! shouldRespond will be true.
-  var url = stripIgnoredUrlParameters(event.request.url, ignoreUrlParametersMatching);
-  shouldRespond = urlsToCacheKeys.has(url);
+    // First, remove all the ignored parameters and hash fragment, and see if we
+    // have that URL in our cache. If so, great! shouldRespond will be true.
+    var url = stripIgnoredUrlParameters(event.request.url, ignoreUrlParametersMatching);
+    shouldRespond = urlsToCacheKeys.has(url);
 
-  // If shouldRespond is false, check again, this time with 'index.html'
-  // (or whatever the directoryIndex option is set to) at the end.
-  var directoryIndex = 'index.html';
-  if (!shouldRespond && directoryIndex) {
-   url = addDirectoryIndex(url, directoryIndex);
-   shouldRespond = urlsToCacheKeys.has(url);
+    // If shouldRespond is false, check again, this time with 'index.html'
+    // (or whatever the directoryIndex option is set to) at the end.
+    var directoryIndex = 'index.html';
+    if (!shouldRespond && directoryIndex) {
+      url = addDirectoryIndex(url, directoryIndex);
+      shouldRespond = urlsToCacheKeys.has(url);
+    }
+
+    // If shouldRespond is still false, check to see if this is a navigation
+    // request, and if so, whether the URL matches navigateFallbackWhitelist.
+    var navigateFallback = '';
+    if (!shouldRespond &&
+        navigateFallback &&
+        (event.request.mode === 'navigate') &&
+        isPathWhitelisted([], event.request.url)) {
+      url = new URL(navigateFallback, self.location).toString();
+      shouldRespond = urlsToCacheKeys.has(url);
+    }
+
+    // If shouldRespond was set to true at any point, then call
+    // event.respondWith(), using the appropriate cache key.
+    if (shouldRespond) {
+      event.respondWith(
+        caches.open(cacheName).then(function(cache) {
+          return cache.match(urlsToCacheKeys.get(url)).then(function(response) {
+            if (response) {
+              return response;
+            }
+            throw Error('The cached response that was expected is missing.');
+          });
+        }).catch(function(e) {
+          // Fall back to just fetch()ing the request if some unexpected error
+          // prevented the cached response from being valid.
+          console.warn('Couldn\'t serve response for "%s" from cache: %O', event.request.url, e);
+          return fetch(event.request);
+        })
+      );
+    }
   }
-
-  // If shouldRespond is still false, check to see if this is a navigation
-  // request, and if so, whether the URL matches navigateFallbackWhitelist.
-  var navigateFallback = '';
-  if (!shouldRespond &&
-    navigateFallback &&
-    (event.request.mode === 'navigate') &&
-    isPathWhitelisted([], event.request.url)) {
-   url = new URL(navigateFallback, self.location).toString();
-   shouldRespond = urlsToCacheKeys.has(url);
-  }
-
-  // If shouldRespond was set to true at any point, then call
-  // event.respondWith(), using the appropriate cache key.
-  if (shouldRespond) {
-   event.respondWith(
-    caches.open(cacheName).then(function(cache) {
-     return cache.match(urlsToCacheKeys.get(url)).then(function(response) {
-      if (response) {
-       return response;
-      }
-      throw Error('The cached response that was expected is missing.');
-     });
-    }).catch(function(e) {
-     // Fall back to just fetch()ing the request if some unexpected error
-     // prevented the cached response from being valid.
-     console.warn('Couldn\'t serve response for "%s" from cache: %O', event.request.url, e);
-     return fetch(event.request);
-    })
-   );
-  }
- }
 });
 
 
@@ -265,7 +269,7 @@ self.addEventListener('fetch', function(event) {
  you may not use this file except in compliance with the License.
  You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
+     http://www.apache.org/licenses/LICENSE-2.0
 
  Unless required by applicable law or agreed to in writing, software
  distributed under the License is distributed on an "AS IS" BASIS,
@@ -281,4 +285,8 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/^https: \/\/artterror\.cf\//, toolbox.networkFirst, {});
+toolbox.router.get(/^https:\/\/artterror\.cf\//, toolbox.networkFirst, {});
+
+
+
+
