@@ -30,7 +30,7 @@ hover image
 
 github.io
  + https://pages.github.com/
- + https://taufiqhdyt.github.io/FP_23/
+ + //artterror.cf/
 
 recaptcha
  + https://www.google.com/recaptcha/admin#site/341564269?setup

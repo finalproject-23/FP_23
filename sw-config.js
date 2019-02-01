@@ -15,7 +15,7 @@ module.exports = {
   'assets/**/**.woff2'
  ],
  runtimeCaching: [{
-  urlPattern: /^https:\/\/artterror23\.ga\//,
+  urlPattern: /^https:\/\/artterror\.cf\//,
   handler: 'networkFirst'
  }]
 };
